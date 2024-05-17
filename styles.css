@@ -4,8 +4,8 @@ html{
     font-size: 14px;
 }
 .container{
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
     font-family : apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .navbar-list, li, a{
@@ -13,6 +13,13 @@ html{
     text-decoration: none; /* Removes the underline from links */
     color: inherit; /* Inherits the color from the parent element or sets your desired color */
    /* inherit makes it from purple to white */ 
+}
+
+main{
+    padding-top: 7.5vh; /* Adjust this value based on the height of your header */
+}
+#about, #skills, #projects, #experiences, #contact, #blog {
+    padding-top: 60px; /* Ensure this matches the header height */
 }
 
 h1{

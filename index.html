@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="pagescroll.css">
 
 <script src="script.js"></script>
 <script src="navbar.js"></script>
@@ -19,22 +20,22 @@
     <!-- Creating container to control the width of overall-->
     <div class="container">
         <header>
-            <a href="#" class="logo">Logo</a>
+            <a href=".home" class="logo">AXJH03</a>
             <ul class="navbar-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#">Resume</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Experiences</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </header>
 
         <!-- This contain all the pages as different divs -->
         <main>
             <!--The home section-->
-            <div class="home">
+            <div id="home">
                 <div class="home-container">
                     <div id="home-name">ALOK JHA</div>
                     <div id="home-title">Software Developer</div>
@@ -42,31 +43,28 @@
             </div>
 
             <!-- The about section-->
-            <div class="about">
+            <div id="about">
                 <h1>About</h1>
             </div>
 
-            <div class="skills">
+            <div id="skills">
                 <h1>Skills</h1>
             </div>
 
-            <div class="resume">
-                <h1>Resume</h1>
-            </div>
-
-            <div class="projects">
+            <div id="projects">
                 <h1>Projects</h1>
             </div>
 
-            <div class="experiences">
+            <div id="experiences">
                 <h1>Experiences</h1>
             </div>
 
-            <div class="contact">
+            <div id="contact">
                 <h1>Contact</h1>
             </div>
 
-            <div class="blog">
+            <div id="blog">
+                <h1>Blog</h1>
             </div>
 
         </main>

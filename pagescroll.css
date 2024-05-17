@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#about {
+  height: 100vh;
+}
+
+#home {
+  height: 100vh;
+}
+
+#skills {
+  height: 100vh;
+}
+
+#projects {
+  height: 100vh;
+}
+
+#experiences {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+}
+
+#blog {
+  background: orange;
+  height: 100vh;
+}
