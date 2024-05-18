@@ -50,9 +50,34 @@ margin-right: 10%;
 .project-list li::before {
     content: '\2022';      /* Unicode for a bullet point */
     color: aqua;           /* Color of the bullet */
-    font-size: 3.2em;      /* Size of the bullet */
+    font-size: 2.2em;      /* Size of the bullet */
     position: absolute;    /* Position absolutely within the relative li */
     left: 0;               /* Align to the left */
-    top: 15%;              /* Align to the middle vertically */
+    top: 10%;              /* Align to the middle vertically */
     transform: translateY(-50%); /* Adjust to vertically center the bullet */
 }
+
+.project-pitch{
+    font-size: 1.1em;;
+}
+
+.project-pitch {
+    font-size: 1.1em;
+}
+
+.project-code-link {
+    text-decoration: underline; /* Add underline to this specific link */
+}
+
+.project-pitch a {
+    color: inherit; /* Ensure the links inherit color from the parent */
+    text-decoration: underline; /* Add underline to all links in project-pitch */
+    transition: color 0.2s; /* Smooth transition for color change on hover */
+    color: aqua;
+}
+
+.project-pitch a:hover {
+    color: blueviolet; /* Change color on hover for better visibility */
+}
+
+
