@@ -1,45 +1,89 @@
-.home-container{
-    display: flex;
-    flex-direction: column;
+.home-container {
+  flex-direction: column;
 
-    /*Vertical centering*/
-    position: absolute;
-    top: 35%;
-    transform: translate(0, -50%);
-    padding: 10px;
-
-    /*Horizontal centering*/
-    left: 50%;
-    transform: translate(-50%, 0);
-
+  /*Vertical centering*/
+  position: absolute;
+  top: 35%;
+  transform: translate(0, -50%);
+  padding: 0px;
+  /*Horizontal centering*/
+  left: 50%;
+  margin-left: 0;
+  transform: translate(-50%, 0);
 }
-
-#home-name{
-    font-size: 9em;
-    font-weight: bold;
-    text-align: left;
-}
-
 
 #home-name {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 1px solid ; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; 
-    animation: 
-      typing 1s steps(50, end),
-      blink-caret .5s step-end infinite;
-  }
+  font-family: "Arizonia", cursive;
+  font-size: 11em;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 10px; /* To remove that cut out in text */
+}
+
+#home-name {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 1px solid; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em;
+  animation: typing 1s steps(50, end), blink-caret 0.5s step-end infinite;
+}
+
+.typeeffect-text-container {
+  padding-top: 3%;
+  padding-left: 35%;
+  padding-right: auto;
+}
+
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #15171a ;
+    border-left: 2px solid aqua;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+    
+}
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  from {
+    width: 0;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #15171a; }
+  to {
+    width: 100%;
   }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #15171a;
+  }
+}
+
+.text {
+  position: relative;
+  color: white;
+  font-size: 2em;
+}
+
+.text.sec-text {
+  color: aqua;
+}

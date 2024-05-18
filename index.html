@@ -11,10 +11,16 @@
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/pagescroll.css" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+    rel="stylesheet"
+  />
   <!-- JS -->
   <script src="js/script.js"></script>
   <script src="js/navbar.js"></script>
+  <script src="js/typewriter.js"></script>
 
   <body>
     <!-- Creating container to control the width of overall-->
@@ -37,10 +43,13 @@
         <!--The home section-->
         <div id="home">
           <div class="home-container">
-            <div id="home-name">ALOK JHA</div>
+            <div id="home-name">Alok Jha</div>
             <!-- Typewriter effect -->
             <!--Text will go between span-->
-            <h2>I'm a <span class="auto-type"></span></h2>
+            <div class="typeeffect-text-container">
+            <span class="text first-text">I'm a </span>
+            <span class="text sec-text"></span>
+            </div>
           </div>
         </div>
 
@@ -73,5 +82,22 @@
       <footer></footer>
     </div>
   </body>
-  
+  <script>
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+      setTimeout(() => {
+        text.textContent = "Developer";
+      }, 0);
+      setTimeout(() => {
+        text.textContent = "Designer";
+      }, 4000);
+      setTimeout(() => {
+        text.textContent = "Student";
+      }, 8000);
+    };
+
+    textLoad();
+    setInterval(textLoad, 12000); // change in 12 sec must match with css steps()
+  </script>
 </html>

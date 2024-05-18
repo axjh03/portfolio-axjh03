@@ -50,7 +50,7 @@ header .logo{
     position:relative; /* This is to make the z-index work */
     font-weight: 100;
     font-size: 2em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 4px;
     transition: 0.6s;
 }
