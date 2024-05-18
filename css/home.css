@@ -12,6 +12,9 @@
   transform: translate(-50%, 0);
 }
 
+.logo{
+    color: aqua;
+}
 #home-name {
   font-family: "Arizonia", cursive;
   font-size: 11em;
@@ -31,7 +34,7 @@
 
 .typeeffect-text-container {
   padding-top: 3%;
-  padding-left: 35%;
+  padding-left: 40%;
   padding-right: auto;
 }
 

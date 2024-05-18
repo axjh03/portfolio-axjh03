@@ -23,28 +23,11 @@ header{
 }
 
 
-@media screen and (max-width: 768px){
-    header{
-        flex-direction: column;
-        padding: 10px 0px;
-    }
-    .navbar-list, ul, li{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    ul{
-        margin-bottom: 400px;
-    }
-    
-}
-
 header.sticky{
     background-color: #3B414A;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
+
 
 header .logo{
     position:relative; /* This is to make the z-index work */
