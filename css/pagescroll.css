@@ -8,29 +8,25 @@ body {
 }
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #home {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #skills {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #projects {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #experiences {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #contact {
-  height: 100vh;
-}
-
-#blog {
-  height: 100vh;
+  min-height: 100vh;
 }

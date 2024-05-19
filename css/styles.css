@@ -22,6 +22,12 @@ main{
     padding-top: 60px; /* Ensure this matches the header height */
 }
 
+/* #projects{
+    padding-bottom: 30%; /* Change this if experience overlapping with projects 
+}*/
+
+
+
 h1{
     font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     /* Write font weight in relatve terms */

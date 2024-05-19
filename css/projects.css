@@ -69,14 +69,13 @@ margin-right: 10%;
     text-decoration: underline; /* Add underline to this specific link */
 }
 
-.project-pitch a {
+.project-code-link {
     color: inherit; /* Ensure the links inherit color from the parent */
     text-decoration: underline; /* Add underline to all links in project-pitch */
     transition: color 0.2s; /* Smooth transition for color change on hover */
     color: aqua;
 }
-
-.project-pitch a:hover {
+.project-code-link:hover {
     color: blueviolet; /* Change color on hover for better visibility */
 }
 
