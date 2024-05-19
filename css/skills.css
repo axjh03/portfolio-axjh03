@@ -1,0 +1,34 @@
+#skills-icons {
+  font-size: 4em;
+}
+
+#skills-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+#skills-text {
+  padding-top: 2%;
+  width: 50%;
+  font-size: 1.5em;
+  margin-right: 2%;
+}
+
+#skills-icons {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  #skills-flex {
+    flex-direction: column;
+  }
+
+  #skills-text {
+    width: 100%;
+  }
+
+  #skills-icons {
+    width: 100%;
+  }
+    
+}

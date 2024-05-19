@@ -18,7 +18,7 @@ html{
 main{
     padding-top: 7.5vh; /* Adjust this value based on the height of your header */
 }
-#about, #skills, #projects, #experiences, #contact, #blog {
+#about, #skills, #projects, #experiences, #contact, #certificates{
     padding-top: 60px; /* Ensure this matches the header height */
 }
 
