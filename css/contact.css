@@ -1,0 +1,21 @@
+#contact-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+#gif{
+    width: 50%;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: left ;
+}
+
+#contact-gif{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
