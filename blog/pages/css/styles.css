@@ -1,0 +1,8 @@
+html{
+    background-color: #15171a;
+    color:white;
+    font-size: 14px;
+}
+main{
+    padding-top: 7.5vh; /* Adjust this value based on the height of your header */
+}
