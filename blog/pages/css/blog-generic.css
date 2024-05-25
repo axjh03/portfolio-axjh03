@@ -1,42 +1,135 @@
-html{
+html {
     background-color: #15171a;
-    color:white;
+    color: white;
     font-size: 14px;
 }
-main{
+
+main {
     padding-top: 7.5vh; /* Adjust this value based on the height of your header */
 }
-.container{
+
+.container {
     padding-left: 11%;
     padding-right: 11%;
-    font-family : apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
-
 
 /* FOR THE ARTICLE PAGE */
 
 /* Font sizes */
-.article-title{
+.article-title {
     font-weight: bolder;
     font-size: 3.5em;
+    margin-bottom: 0px;
 }
 
-.article-short-description{
+.article-short-description {
     font-size: 1.4em;
     color: #bdbbb7;
+    margin-top: 1em;
 }
 
-.article-subtitles{
+.article-subtitles {
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
-.article-content{
+.article-content {
     font-size: 1.4em;
     color: #bdbbb7;
 }
 
-.after-wide-pic li{
+p{
+    margin-bottom: 0px;
+}
+
+.blog-image{
+    object-fit: fill;
+}
+
+.after-wide-pic li {
     font-size: 1.4em;
     font-weight: bold;
+    margin-top: 1em;
+
+}
+
+.article-category {
+    font-size: 1.4em;
+    color: #bdbbb7;
+}
+
+/* FLEX BOX */
+.before-wide-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+.after-wide-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+/* WIDE PIC */
+.frame-wide-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wide-pic {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Fixed height, adjust as necessary */
+    object-fit: cover;
+    max-width: 1000px; /* Optional maximum width */
+    border-radius: 20px; /* Fixed radius for consistent rounding */
+}
+
+/*article-author*/
+/*Using grid*/
+
+.article-author {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Adjusted column widths */
+    grid-template-areas: 
+        "author-pic author-name"
+        "author-pic author-date";
+    align-items: center; /* Align items vertically center */
+    margin-top: 1em;
+    column-gap: 1em; /* Add gap between columns */
+    margin-bottom: 50px;
+}
+
+.author-pic {
+    grid-area: author-pic;
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+}
+
+.author-name {
+    grid-area: author-name;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+    align-self: end; /* Align the text vertically */
+}
+
+.article-date {
+    grid-area: author-date;
+    font-size: 1em;
+    color: #bdbbb7;
+    margin: 0;
+    align-self: start; /* Align the text vertically */
 }
