@@ -60,17 +60,14 @@ header ul li{
    /* inherit makes it from purple to white */ 
 }
 
-body{
-    min-height: 200vh;
-}
 
 header a{
     text-decoration: none;
 }
 
 .container{
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 20%;
+    padding-right: 20%;
     font-family : apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     color: white;
 }
