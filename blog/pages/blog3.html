@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How To Think Like A Programmer</title>
+    <title>10 Git Commands Every Developer Should Know</title>
     <link rel="stylesheet" href="css/blog-generic.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="icon" href="../../media/favicon.ico" type="image/x-icon">
@@ -29,121 +29,86 @@
 
         <main>
             <div class="before-wide-pic">
-                <h1 class="article-title">How To Think Like A Programmer</h1>
-                <p class="article-short-description">
-                    Empower Yourself to Overcome Coding Challenges with the Programmer Mindset</p>
-
+                <h1 class="article-title">10 Git Commands Every Developer Should Know</h1>
+                <p class="article-short-description">Master Git with These Essential Commands Today</p>
 
                 <div class="article-author">
-                    <img class="author-pic" src="../images/alok-author.png">
+                    <img class="author-pic" src="../images/alok-author.png" alt="Author Picture">
                     <p class="author-name">Alok Jha</p>
-                    <p class="article-date">May 25, 2024 &bull; 3 min read</p>
+                    <p class="article-date">May 29, 2024 &bull; 4 min read</p>
                 </div>
-
-
-
             </div>
 
             <div class="frame-wide-pic">
-                <img class="wide-pic" src="../images/blog1/wide.jpg">
+                <img class="wide-pic" src="https://miro.medium.com/v2/resize:fit:1400/1*eGdNATA_BGQcA1xUvc9Irg.png" alt="Windows for Development">
             </div>
+
             <div class="after-wide-pic">
-                <p class="article-subtitles">Understanding the Programmer Mentality</p>
-                <p class="article-content">Think of programming as a form of communication. When you speak, your goal is
-                    to convey your ideas effectively to others. Similarly, programming is about communicating with a
-                    machine. You don’t need to know every single detail of a programming language; you just need to
-                    grasp the fundamentals and apply them to convey your ideas clearly.
-                <p></p>
-                <p class="article-content">Programming involves breaking down problems into smaller, manageable pieces and applying basic
-                principles to solve them. It’s not about memorizing code snippets but about understanding how to
-                approach and solve problems.</p>
-                <p class="article-subtitles">Breaking Problems Down</p>
-                <p class="article-content">To illustrate, imagine explaining to a machine how to open a jar of pickles.
-                    You can’t just say “open jar”; you need to provide step-by-step instructions:</p>
+                <p class="article-subtitles">1. Git Clone</p>
                 <ol>
-                    <li>1. Pick up the jar with your left hand.</li>
-                    <li>2. Place your right hand over the lid.</li>
-                    <li>3. Tighten your grip with both hands.</li>
-                    <li>4. Rotate your right hand counterclockwise and your left hand clockwise.</li>
-                    <li>5. Continue rotating until the lid separates from the jar.</li>
-                    <li>6. Release your grip.</li>
+                    <p class="article-content"><code class="in-line-code">git clone</code> downloads an existing repository to your local machine. It's useful for getting started with a project hosted on platforms like GitHub.</p>
+                    <pre><code>git clone &lt;https://repository-link&gt;</code></pre>
                 </ol>
-                <p class="article-subtitles">Breaking Problems Down</p>
+                <p class="article-subtitles">2. Git Branch</p>
                 <ol>
-                    <li>1. Talk Through Problems Aloud</li>
-                    <p class="article-content">
-                        Explain the problem and your approach to someone else, or even to yourself out loud. This helps
-                        clarify your thinking and identify gaps in your understanding.
-                    </p>
-
-                    <li>2. Collaborate with Others</li>
-                    <p class="article-content">
-                        Programmers often work together to solve complex problems. Pair programming, where two
-                        programmers work together at one computer, can be particularly effective. One writes the code
-                        (the driver), and the other reviews and guides (the navigator). This helps you learn different
-                        approaches to problem-solving
-                    </p>
-                    <li>3. Take One Step at a Time</li>
-                    <p class="article-content">
-                        Large problems can be overwhelming. Break them down into smaller, manageable tasks. Focus on
-                        solving each piece individually, which makes the overall problem less daunting.
-                    </p>
-
-                    <li>4. Start with Simpler Problems</li>
-                    <p class="article-content">
-                        Solve a simpler version of your problem first. Gradually introduce complexity until you tackle
-                        the original problem.
-                    </p>
-
-                    <li>5. Practice, Don’t Memorize</li>
-                    <p class="article-content">
-                        Focus on understanding the principles behind programming rather than memorizing code. Regular
-                        practice will reinforce these fundamentals, making it easier to tackle more complex problems
-                        over time.
-                    </p>
-
-                    <li>6. Don’t Worry About Syntax</li>
-                    <p class="article-content">
-                        Even experienced programmers look up syntax. What’s important is understanding the concepts.
-                        Look up syntax as needed without feeling inadequate.
-                    </p>
-
-                    <li>7. Avoid Shortcuts</li>
-                    <p class="article-content">
-                        Resist the temptation to rely on quick fixes or others’ solutions. Solving problems on your own
-                        helps develop your problem-solving skills and deepens your understanding.
-                    </p>
-
-                    <li>8. Seek Help When Necessary</li>
-                    <p class="article-content">
-                        If you’ve tried various approaches and still can’t solve a problem, ask for help. Consult a
-                        colleague, a mentor, or an online forum. It’s important to try your best first, ensuring you
-                        learn as much as possible before seeking assistance.
-                    </p>
-
-                    <li>9. Embrace Debugging</li>
-                    <p class="article-content">
-                        Debugging helps you identify and understand your mistakes. Analyzing errors and correcting them
-                        improves your problem-solving skills and helps you avoid similar issues in the future.
-                    </p>
-
-                    <li>10. Read Documentation</li>
-                    <p class="article-content">
-                        Learning to read and understand programming documentation is crucial. It’s like a recipe that
-                        guides you on how the code should work, helping you apply it effectively.
-                    </p>
-
+                    <p class="article-content">Branches allow multiple developers to work on a project simultaneously. Use <code class="in-line-code">git branch</code> to create, list, or delete branches.</p>
+                    <pre><code>git branch &lt;branch-name&gt;</code></pre>
+                    <p class="article-content">Push the new branch to the remote repository:</p>
+                    <pre><code>git push -u &lt;remote&gt; &lt;branch-name&gt;</code></pre>
+                    <p class="article-content">View branches:</p>
+                    <pre><code>git branch</code> or <code>git branch --list</code></pre>
+                    <p class="article-content">Delete a branch:</p>
+                    <pre><code>git branch -d &lt;branch-name&gt;</code></pre>
                 </ol>
-
-                <p class="article-subtitles">Putting Your Skills into Practice</p>
-
-                <p class="article-content">To start practicing, explore resources and forums where you can apply what you’ve learned. Focus on problem-solving and continuous learning. Remember, there’s no single "right" way to solve a problem. With practice, you’ll develop your unique programming perspective.</p>
-                <img class="in-page-images">
+                <p class="article-subtitles">3. Git Checkout</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git checkout</code> switches branches or restores working tree files. Create and switch to a new branch with:</p>
+                    <pre><code>git checkout -b &lt;branch-name&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">4. Git Status</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git status</code> displays the state of the working directory and staging area. It lets you see which changes have been staged, which haven't, and which files aren’t being tracked by Git.</p>
+                    <pre><code>git status</code></pre>
+                </ol>
+                <p class="article-subtitles">5. Git Add</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git add</code> stages changes for the next commit. Add a single file:</p>
+                    <pre><code>git add &lt;file&gt;</code></pre>
+                    <p class="article-content">Add all changes:</p>
+                    <pre><code>git add -A</code></pre>
+                </ol>
+                <p class="article-subtitles">6. Git Commit</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git commit</code> saves your changes to the local repository. Always include a message:</p>
+                    <pre><code>git commit -m "commit message"</code></pre>
+                </ol>
+                <p class="article-subtitles">7. Git Push</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git push</code> uploads your local commits to a remote repository. Push your changes with:</p>
+                    <pre><code>git push &lt;remote&gt; &lt;branch-name&gt;</code></pre>
+                    <p class="article-content">For a new branch:</p>
+                    <pre><code>git push --set-upstream &lt;remote&gt; &lt;branch-name&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">8. Git Pull</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git pull</code> fetches and merges changes from the remote server to your working directory.</p>
+                    <pre><code>git pull &lt;remote&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">9. Git Revert</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git revert</code> undoes changes by creating a new commit. Find the commit hash with <code class="in-line-code">git log --oneline</code>, then revert it:</p>
+                    <pre><code>git revert &lt;commit-hash&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">10. Git Merge</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git merge</code> integrates changes from one branch into another. Switch to the branch you want to merge into:</p>
+                    <pre><code>git checkout &lt;branch-to-merge-into&gt;</code></pre>
+                    <p class="article-content">Then merge the changes:</p>
+                    <pre><code>git merge &lt;branch-to-merge&gt;</code></pre>
+                </ol>
             </div>
-
         </main>
     </div>
-
 </body>
 
 </html>

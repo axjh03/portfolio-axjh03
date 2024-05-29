@@ -133,3 +133,24 @@ p{
     margin: 0;
     align-self: start; /* Align the text vertically */
 }
+.in-line-code{
+    font-size: 0.8em;
+    color: red;
+    background-color: #33383e;
+    padding: 4px;
+    border-radius: 2.7%;
+}
+
+pre {
+    background: #53565E;
+    padding: 10px;
+    border-left: 5px solid #333;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+pre code {
+    font-family: Consolas, "Courier New", Courier, monospace;
+    display: block;
+}
