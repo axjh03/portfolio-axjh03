@@ -10,18 +10,52 @@
     padding: 20px;
 }
 
-/* Styling for the GIF container */
-#gif {
+/* Styling for the contact details container */
+#contact-details {
     flex: 1; /* Allow to grow */
     max-width: 50%;
     padding: 10px;
+    box-sizing: border-box;
 }
 
-#gif img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
+#contact-details h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#contact-details p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-item #contact-icon {
+    font-size: 2.8em;
+    margin-right: 10px;
+    color: aqua; /* Use red color for icons */
+}
+
+.contact-item .value {
+    font-size: 1.2em;
+    color: white;
+    padding-left: 20px; /* Add padding to create space like a tab */
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Main styling for the contact form */
@@ -50,7 +84,7 @@
     width: 48%; /* Two elements in a row, with some spacing */
 }
 
-input[type="text"], input[type="email"], input[type='telephone'], textarea {
+input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
@@ -75,8 +109,6 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-
-
 input[type="submit"]:hover {
     background-color: #c9302c;
 }
@@ -87,7 +119,7 @@ input[type="submit"]:hover {
         flex-direction: column; /* Stack on smaller screens */
     }
 
-    #gif, #contact-form {
+    #contact-details, #contact-form {
         max-width: 100%; /* Full width for both elements */
     }
 

@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/skills.css" />
+  
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -40,6 +41,7 @@
   <script src="js/script.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/typewriter.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
   <body>
     <!-- Creating container to control the width of overall-->
@@ -577,67 +579,63 @@
             </div>
           </div>
         </div>
-
-        <div id="contact">
-          <h1>Message me</h1>
-          <div id="contact-container">
-            <div id="gif">
-              <img
-                src="https://cinsulddca.cloudimg.io/https://www.parachute.net/media/1099/email.gif"
-                alt="contact"
-                id="contact-gif"
-              />
+          <div id="contact">
+            <h1>Message me</h1>
+            <div id="contact-container">
+                <div id="contact-details">
+                    <h2>Get in Touch</h2>
+                    <p>You can text or email me on the contact details provided below. Also, you can provide your information and send me a message and I will contact you shortly. Thank you!</p>
+                    <div class="contact-item">
+                      <a href="https://www.instagram.com/axjh03" target="_blank">
+                        <i class="fas fa-user" id="contact-icon"></i>
+                        <span class="value">Alok Jha</span>
+                    </div>
+                    <div class="contact-item">
+                      <a href="https://maps.app.goo.gl/ajxH8qqjmRGhS2ceA" target="_blank">
+                        <i class="fas fa-map-marker-alt" id="contact-icon"></i>
+                        <span class="value">Arlington, Texas</span>
+                      </a>
+                    </div>
+                    <div class="contact-item">
+                      <a href="mailto:axjh03@gmail.com">
+                        <i class="fas fa-envelope" id="contact-icon"></i>
+                        <span class="value">axjh03@gmail.com</span>
+                      </a>
+                    </div>
+                    <div class="contact-item">
+                      <a href="tel:+19452441606">
+                        <i class="fas fa-phone" id="contact-icon"></i>
+                        <span class="value">+1(945)244-1606</span>
+                      </a>
+                    </div>
+                </div>
+                <div id="contact-form">
+                    <form action="https://formspree.io/f/mkndlwgk" target="_blank" method="POST">
+                        <div class="form-row">
+                            <div class="form-element">
+                                <input type="text" id="name" name="name" placeholder="Name" />
+                            </div>
+                            <div class="form-element">
+                                <input type="email" id="email" name="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="form-element">
+                            <input type="tel" name="telephone" id="telephone" placeholder="(555) 555-5555 (Optional)" />
+                        </div>
+                        <div class="form-element">
+                            <input type="text" id="subject" name="_subject" placeholder="Subject" />
+                        </div>
+                        <div class="form-element">
+                            <textarea id="message" name="message" placeholder="Message.."></textarea>
+                        </div>
+                        <div class="form-element">
+                            <input type="submit" value="Send message" />
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div id="contact-form">
-              <form action="https://formspree.io/f/mkndlwgk" target="_blank" method="POST">
-                <div class="form-row">
-                  <div class="form-element">
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div class="form-element">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                </div>
-                <div class="form-element">
-                  <input
-                    type="telephone"
-                    name="telephone"
-                    id="telephone"
-                    placeholder="(555) 555-5555 (Optional)"
-                  />
-                </div>
-                <div class="form-element">
-                  <input
-                    type="text"
-                    id="subject"
-                    name="_subject"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="form-element">
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Message.."
-                  ></textarea>
-                </div>
-                <div class="form-element">
-                  <input type="submit" value="Send message" />
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
+        
       </main>
 
       <footer></footer>
