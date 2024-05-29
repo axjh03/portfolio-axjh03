@@ -50,7 +50,7 @@
     width: 48%; /* Two elements in a row, with some spacing */
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], input[type='telephone'], textarea {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
@@ -74,6 +74,8 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 16px;
 }
+
+
 
 input[type="submit"]:hover {
     background-color: #c9302c;
