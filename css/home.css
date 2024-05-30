@@ -23,6 +23,18 @@
   padding-left: 10px; /* To remove that cut out in text */
 }
 
+@media screen and (max-width: 768px){
+  #home-name {
+    font-size: 6em;
+  }
+
+  /* text first-text */
+  .text {
+    font-size: 1.5em;
+  }
+  
+}
+
 #home-name {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 1px solid; /* The typwriter cursor */

@@ -1,664 +1,638 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alok Jha</title>
-    <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/pagescroll.css" />
-  <link rel="stylesheet" href="css/about.css" />
-  <link rel="stylesheet" href="css/projects.css" />
-  <link rel="stylesheet" href="css/contact.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/skills.css" />
-  
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-  />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alok Jha</title>
+  <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
+</head>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/typewriter.js"></script>
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<!-- CSS -->
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/home.css" />
+<link rel="stylesheet" href="css/navbar.css" />
+<link rel="stylesheet" href="css/pagescroll.css" />
+<link rel="stylesheet" href="css/about.css" />
+<link rel="stylesheet" href="css/projects.css" />
+<link rel="stylesheet" href="css/contact.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/skills.css" />
+<link rel="stylesheet" href="css/burger.css" />
 
-  <body>
-    <!-- Creating container to control the width of overall-->
-    <div class="container">
-      <header>
-        <a href="#" class="logo">AXJH03</a>
-        <ul class="navbar-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="/blog/blog.html">Blog</a></li>
-        </ul>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-        
-      </header>
+<!-- JS -->
+<script src="js/script.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
-      <!-- This contain all the pages as different divs -->
-      <main>
-        <!--The home section-->
-        <div id="home">
-          <div class="home-container">
-            <div id="home-name">Alok Jha</div>
-            <!-- Typewriter effect -->
-            <!--Text will go between span-->
-            <div class="typeeffect-text-container">
-              <span class="text first-text">I'm a </span>
-              <span class="text sec-text"></span>
-            </div>
+<body>
+  <!-- Creating container to control the width of overall-->
+  <div class="container">
+    <!-- <header class="desktop"> -->
+    <header id="desktop" class="show">
+      <a href="#" class="logo">AXJH03</a>
+      <ul class="navbar-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+      </ul>
+    </header>
+
+    <header id="phone" class="hidden">
+      <a href="#" class="logo">AXJH03</a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+
+
+
+
+
+
+    <!-- This contain all the pages as different divs -->
+    <main>
+      <!--The home section-->
+      <div id="home">
+        <div class="home-container">
+          <div id="home-name">Alok Jha</div>
+          <!-- Typewriter effect -->
+          <!--Text will go between span-->
+          <div class="typeeffect-text-container">
+            <span class="text first-text">I'm a </span>
+            <span class="text sec-text"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- The about section-->
+      <div id="about">
+        <h1>About</h1>
+        <div id="about-container">
+          <div id="about-image">
+            <img src="media/image2.png" alt="axjh03" id="axjh03-image" />
+          </div>
+          <div id="about-description">
+            <p id="about-text-hi">Hello There 😁</p>
+            <p id="about-text-description">
+              I am Alok, a junior at the University of Texas at Arlington,
+              currently majoring with a Bachelor of Science in Computer
+              Science.
+            </p>
+          </div>
+          <div id="social">
+            <!--Linkedin-->
+            <a href="https://www.linkedin.com/in/axjh03/" target="_blank"><i class="fab fa-linkedin"
+                id="social-icon"></i></a>
+            <!--Github-->
+            <a href="https://github.com/axjh03" target="_blank"><i class="fab fa-github" id="social-icon"></i></a>
+            <!--Instagram-->
+            <a href="https://www.instagram.com/axjh03" target="_blank"><i class="fab fa-instagram"
+                id="social-icon"></i></a>
+            <!--Youtube-->
+            <a href="https://www.youtube.com/channel/UCZ2471PuuiBr5ecaEx9ysKw" target="_blank"><i class="fab fa-youtube"
+                id="social-icon"></i></a>
+            <!--facebook-->
+            <a href="https://www.facebook.com/aalok.jha.7545/" target="_blank"><i class="fab fa-facebook"
+                id="social-icon"></i></a>
+          </div>
+
+          <div id="about-resume">
+            <button type="button" id="resume-button">Resume</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills">
+        <h1>Skills</h1>
+        <div id="skills-flex">
+          <div id="skills-text">
+            I am a fast learner and learn new skills and technologies without
+            any hassle, regardless of the learning curve. So far, I have
+            acquired and perfected myself in HTML, CSS, JavaScript, Java, C,
+            C++, Node.js, Python, and other relevant technologies for web and
+            software development. My ability to quickly adapt and grasp new
+            concepts allows me to continuously expand my skill set and stay
+            up-to-date with the latest industry trends.
+          </div>
+          <div id="skills-icons">
+            <i class="devicon-git-plain-wordmark"></i>
+
+            <i class="devicon-angularjs-plain"></i>
+
+            <i class="devicon-anaconda-original"></i>
+
+            <i class="devicon-javascript-plain"></i>
+
+            <i class="devicon-linux-plain"></i>
+
+            <i class="devicon-docker-plain-wordmark"></i>
+
+            <i class="devicon-kubernetes-plain-wordmark"></i>
+
+            <i class="devicon-python-plain"></i>
+
+            <i class="devicon-tensorflow-original"></i>
+
+            <i class="devicon-pytorch-original"></i>
+
+            <i class="devicon-jupyter-plain"></i>
+
+            <i class="devicon-c-plain"></i>
+
+            <i class="devicon-spring-original"></i>
+
+            <i class="devicon-bash-plain"></i>
+
+            <i class="devicon-bootstrap-plain"></i>
+
+            <i class="devicon-dot-net-plain"></i>
+
+            <i class="devicon-express-original"></i>
+
+            <i class="devicon-nodejs-plain-wordmark"></i>
+
+            <i class="devicon-react-original"></i>
+
+            <i class="devicon-mysql-plain-wordmark"></i>
+
+            <i class="devicon-mongodb-plain-wordmark"></i>
+
+            <i class="devicon-raspberrypi-plain"></i>
+
+            <i class="devicon-cplusplus-plain"></i>
+
+            <i class="devicon-amazonwebservices-plain-wordmark"></i>
+
+            <i class="devicon-maven-plain-wordmark"></i>
+
+            <i class="devicon-reactbootstrap-original"></i>
+
+            <i class="devicon-github-original-wordmark"></i>
           </div>
         </div>
 
-        <!-- The about section-->
-        <div id="about">
-          <h1>About</h1>
-          <div id="about-container">
-            <div id="about-image">
-              <img src="media/image2.png" alt="axjh03" id="axjh03-image" />
-            </div>
-            <div id="about-description">
-              <p id="about-text-hi">Hello There 😁</p>
-              <p id="about-text-description">
-                I am Alok, a junior at the University of Texas at Arlington,
-                currently majoring with a Bachelor of Science in Computer
-                Science.
+        <div id="certificates">
+          <h1>Certificates</h1>
+        </div>
+
+        <div id="projects">
+          <h1>Projects</h1>
+
+          <div id="projects-grid">
+            <!--Project1 | CSE 3310 Class-->
+            <div id="project1">
+              <p class="project-title">
+                🍕 Arlington Eats: A Full Stack Web Application as Food
+                Ordering Platform
               </p>
-            </div>
-            <div id="social">
-              <!--Linkedin-->
-              <a href="https://www.linkedin.com/in/axjh03/" target="_blank"
-                ><i class="fab fa-linkedin" id="social-icon"></i
-              ></a>
-              <!--Github-->
-              <a href="https://github.com/axjh03" target="_blank"
-                ><i class="fab fa-github" id="social-icon"></i
-              ></a>
-              <!--Instagram-->
-              <a href="https://www.instagram.com/axjh03" target="_blank"
-                ><i class="fab fa-instagram" id="social-icon"></i
-              ></a>
-              <!--Youtube-->
-              <a
-                href="https://www.youtube.com/channel/UCZ2471PuuiBr5ecaEx9ysKw"
-                target="_blank"
-                ><i class="fab fa-youtube" id="social-icon"></i
-              ></a>
-              <!--facebook-->
-              <a href="https://www.facebook.com/aalok.jha.7545/" target="_blank"
-                ><i class="fab fa-facebook" id="social-icon"></i
-              ></a>
-            </div>
-
-            <div id="about-resume">
-              <button type="button" id="resume-button">Resume</button>
-            </div>
-          </div>
-        </div>
-
-        <div id="skills">
-          <h1>Skills</h1>
-          <div id="skills-flex">
-            <div id="skills-text">
-              I am a fast learner and learn new skills and technologies without
-              any hassle, regardless of the learning curve. So far, I have
-              acquired and perfected myself in HTML, CSS, JavaScript, Java, C,
-              C++, Node.js, Python, and other relevant technologies for web and
-              software development. My ability to quickly adapt and grasp new
-              concepts allows me to continuously expand my skill set and stay
-              up-to-date with the latest industry trends.
-            </div>
-            <div id="skills-icons">
-              <i class="devicon-git-plain-wordmark"></i>
-
-              <i class="devicon-angularjs-plain"></i>
-
-              <i class="devicon-anaconda-original"></i>
-
-              <i class="devicon-javascript-plain"></i>
-
-              <i class="devicon-linux-plain"></i>
-
-              <i class="devicon-docker-plain-wordmark"></i>
-
-              <i class="devicon-kubernetes-plain-wordmark"></i>
-
-              <i class="devicon-python-plain"></i>
-
-              <i class="devicon-tensorflow-original"></i>
-
-              <i class="devicon-pytorch-original"></i>
-
-              <i class="devicon-jupyter-plain"></i>
-
-              <i class="devicon-c-plain"></i>
-
-              <i class="devicon-spring-original"></i>
-
-              <i class="devicon-bash-plain"></i>
-
-              <i class="devicon-bootstrap-plain"></i>
-
-              <i class="devicon-dot-net-plain"></i>
-
-              <i class="devicon-express-original"></i>
-
-              <i class="devicon-nodejs-plain-wordmark"></i>
-
-              <i class="devicon-react-original"></i>
-
-              <i class="devicon-mysql-plain-wordmark"></i>
-
-              <i class="devicon-mongodb-plain-wordmark"></i>
-
-              <i class="devicon-raspberrypi-plain"></i>
-
-              <i class="devicon-cplusplus-plain"></i>
-
-              <i class="devicon-amazonwebservices-plain-wordmark"></i>
-
-              <i class="devicon-maven-plain-wordmark"></i>
-
-              <i class="devicon-reactbootstrap-original"></i>
-
-              <i class="devicon-github-original-wordmark"></i>
-            </div>
-          </div>
-
-          <div id="certificates">
-            <h1>Certificates</h1>
-          </div>
-
-          <div id="projects">
-            <h1>Projects</h1>
-
-            <div id="projects-grid">
-              <!--Project1 | CSE 3310 Class-->
-              <div id="project1">
-                <p class="project-title">
-                  🍕 Arlington Eats: A Full Stack Web Application as Food
-                  Ordering Platform
-                </p>
-                <p class="project-tech-stack">
-                  Tech Stack used : React JS, Node Js, MongoDB, TypeScript, Auth
-                  Stripe, Chakra UI, Tailwind CSS
-                </p>
-                <div class="project-links">
-                  <span class="project-pitch">
-                    👉
-                    <a
-                      href="https://github.com/axjh03"
-                      target="_blank"
-                      class="project-code-link"
-                      >Use the App now</a
-                    >
-                    or
-                    <a
-                      href="https://github.com"
-                      target="_blank"
-                      class="project-code-link"
-                      >View <i class="fab fa-github"></i> for Source Code</a
-                    >
-                  </span>
-                </div>
-                <ol class="project-list">
-                  <li>
-                    Organized the architecture and development of a cutting-edge
-                    food ordering platform utilizing a high-performance stack
-                    with React, Node.js, MongoDB, and TypeScript, focusing on
-                    scalability, maintainability, and user-centric design.
-                  </li>
-                  <li>
-                    Engineered comprehensive search, sort, filter, and
-                    pagination functionalities, optimizing the restaurant
-                    discovery experience. This included advanced algorithms and
-                    intuitive UI/UX designs to streamline the selection process
-                    and enhance user satisfaction.
-                  </li>
-                  <li>
-                    Seamlessly integrated Stripe for payment processing,
-                    ensuring a secure, efficient checkout experience.
-                    Implemented robust backend logic to handle transactions and
-                    user data securely.
-                  </li>
-                  <li>
-                    Deployed WebSocket technology for live order status updates,
-                    creating a dynamic user experience with real-time feedback
-                    on order progression.
-                  </li>
-                  <li>
-                    Applied Chakra UI and Tailwind CSS for styling, achieving a
-                    responsive, aesthetically pleasing interface across devices.
-                    Focused on mobile-first design principles to cater to a wide
-                    user base.
-                  </li>
-                  <li>
-                    Adhered to best practices in code quality, software
-                    development lifecycle, and project management. Implemented
-                    rigorous testing protocols to ensure application reliability
-                    and performance.
-                  </li>
-                  <li>
-                    Utilized Agile methodologies and a Microservices
-                    architecture, enhancing flexibility and product scalability.
-                    This approach facilitated continuous integration and
-                    deployment (CI/CD), aligning with DevOps principles for
-                    efficient development and operational workflows.
-                  </li>
-                </ol>
-              </div>
-
-              <!--Project2 | -->
-              <div id="project2">
-                <p class="project-title">🎮 TWSG: The Word Search Game</p>
-                <p class="project-tech-stack">
-                  Tech Stack used : Java, JUtil, Javascript, Maven, HTML & CSS
-                </p>
+              <p class="project-tech-stack">
+                Tech Stack used : React JS, Node Js, MongoDB, TypeScript, Auth
+                Stripe, Chakra UI, Tailwind CSS
+              </p>
+              <div class="project-links">
                 <span class="project-pitch">
                   👉
-                  <a
-                    href="https://github.com/axjh03"
-                    target="_blank"
-                    class="project-code-link"
-                    >Use the App now</a
-                  >
+                  <a href="https://github.com/axjh03" target="_blank" class="project-code-link">Use the App now</a>
                   or
-                  <a
-                    href="https://github.com/utastudents/cse3310_sp24_group_18"
-                    target="_blank"
-                    class="project-code-link"
-                    >View <i class="fab fa-github"></i> for Source Code</a
-                  >
+                  <a href="https://github.com" target="_blank" class="project-code-link">View <i
+                      class="fab fa-github"></i> for Source Code</a>
                 </span>
-                <ol class="project-list">
-                  <li>
-                    Organized the architecture and development of a cutting-edge
-                    food ordering platform utilizing a high-performance stack
-                    with React, Node.js, MongoDB, and TypeScript, focusing on
-                    scalability, maintainability, and user-centric design.
-                  </li>
-                  <li>
-                    Engineered comprehensive search, sort, filter, and
-                    pagination functionalities, optimizing the restaurant
-                    discovery experience. This included advanced algorithms and
-                    intuitive UI/UX designs to streamline the selection process
-                    and enhance user satisfaction.
-                  </li>
-                  <li>
-                    Seamlessly integrated Stripe for payment processing,
-                    ensuring a secure, efficient checkout experience.
-                    Implemented robust backend logic to handle transactions and
-                    user data securely.
-                  </li>
-                  <li>
-                    Deployed WebSocket technology for live order status updates,
-                    creating a dynamic user experience with real-time feedback
-                    on order progression.
-                  </li>
-                  <li>
-                    Applied Chakra UI and Tailwind CSS for styling, achieving a
-                    responsive, aesthetically pleasing interface across devices.
-                    Focused on mobile-first design principles to cater to a wide
-                    user base.
-                  </li>
-                  <li>
-                    Adhered to best practices in code quality, software
-                    development lifecycle, and project management. Implemented
-                    rigorous testing protocols to ensure application reliability
-                    and performance.
-                  </li>
-                  <li>
-                    Utilized Agile methodologies and a Microservices
-                    architecture, enhancing flexibility and product scalability.
-                    This approach facilitated continuous integration and
-                    deployment (CI/CD), aligning with DevOps principles for
-                    efficient development and operational workflows.
-                  </li>
-                </ol>
               </div>
-              <!-- MORE PROJECTS TO BE ADDED -->
-
-              <!--Project2 | -->
-              <div id="project3">
-                <p class="project-title">🎮 TWSG: The Word Search Game</p>
-                <p class="project-tech-stack">
-                  Tech Stack used : Java, JUtil, Javascript, Maven, HTML & CSS
-                </p>
-                <span class="project-pitch">
-                  👉
-                  <a
-                    href="https://github.com/axjh03"
-                    target="_blank"
-                    class="project-code-link"
-                    >Use the App now</a
-                  >
-                  or
-                  <a
-                    href="https://github.com/utastudents/cse3310_sp24_group_18"
-                    target="_blank"
-                    class="project-code-link"
-                    >View <i class="fab fa-github"></i> for Source Code</a
-                  >
-                </span>
-                <ol class="project-list">
-                  <li>
-                    Organized the architecture and development of a cutting-edge
-                    food ordering platform utilizing a high-performance stack
-                    with React, Node.js, MongoDB, and TypeScript, focusing on
-                    scalability, maintainability, and user-centric design.
-                  </li>
-                  <li>
-                    Engineered comprehensive search, sort, filter, and
-                    pagination functionalities, optimizing the restaurant
-                    discovery experience. This included advanced algorithms and
-                    intuitive UI/UX designs to streamline the selection process
-                    and enhance user satisfaction.
-                  </li>
-                  <li>
-                    Seamlessly integrated Stripe for payment processing,
-                    ensuring a secure, efficient checkout experience.
-                    Implemented robust backend logic to handle transactions and
-                    user data securely.
-                  </li>
-                  <li>
-                    Deployed WebSocket technology for live order status updates,
-                    creating a dynamic user experience with real-time feedback
-                    on order progression.
-                  </li>
-                  <li>
-                    Applied Chakra UI and Tailwind CSS for styling, achieving a
-                    responsive, aesthetically pleasing interface across devices.
-                    Focused on mobile-first design principles to cater to a wide
-                    user base.
-                  </li>
-                  <li>
-                    Adhered to best practices in code quality, software
-                    development lifecycle, and project management. Implemented
-                    rigorous testing protocols to ensure application reliability
-                    and performance.
-                  </li>
-                  <li>
-                    Utilized Agile methodologies and a Microservices
-                    architecture, enhancing flexibility and product scalability.
-                    This approach facilitated continuous integration and
-                    deployment (CI/CD), aligning with DevOps principles for
-                    efficient development and operational workflows.
-                  </li>
-                </ol>
-              </div>
+              <ol class="project-list">
+                <li>
+                  Organized the architecture and development of a cutting-edge
+                  food ordering platform utilizing a high-performance stack
+                  with React, Node.js, MongoDB, and TypeScript, focusing on
+                  scalability, maintainability, and user-centric design.
+                </li>
+                <li>
+                  Engineered comprehensive search, sort, filter, and
+                  pagination functionalities, optimizing the restaurant
+                  discovery experience. This included advanced algorithms and
+                  intuitive UI/UX designs to streamline the selection process
+                  and enhance user satisfaction.
+                </li>
+                <li>
+                  Seamlessly integrated Stripe for payment processing,
+                  ensuring a secure, efficient checkout experience.
+                  Implemented robust backend logic to handle transactions and
+                  user data securely.
+                </li>
+                <li>
+                  Deployed WebSocket technology for live order status updates,
+                  creating a dynamic user experience with real-time feedback
+                  on order progression.
+                </li>
+                <li>
+                  Applied Chakra UI and Tailwind CSS for styling, achieving a
+                  responsive, aesthetically pleasing interface across devices.
+                  Focused on mobile-first design principles to cater to a wide
+                  user base.
+                </li>
+                <li>
+                  Adhered to best practices in code quality, software
+                  development lifecycle, and project management. Implemented
+                  rigorous testing protocols to ensure application reliability
+                  and performance.
+                </li>
+                <li>
+                  Utilized Agile methodologies and a Microservices
+                  architecture, enhancing flexibility and product scalability.
+                  This approach facilitated continuous integration and
+                  deployment (CI/CD), aligning with DevOps principles for
+                  efficient development and operational workflows.
+                </li>
+              </ol>
             </div>
-          </div>
 
-          <div id="experiences">
-            <h1>Experiences</h1>
-            <div id="projects-grid">
-              <div id="experience1">
-                <p class="project-title">
-                  🔬 Endpoint Support - Office of Information Technology
-                </p>
-                <div class="exprience-location-date">
-                  <div class="location">
-                    📍 University of Texas at Arlington, Arlington, TX
-                  </div>
-                  <div class="date">Feb 17, 2024 - Present</div>
-                </div>
-                <ol class="project-list">
-                  <li>
-                    Spearheaded the implementation and management of
-                    enterprise-grade Linux systems, specializing in Red Hat and
-                    Ubuntu distributions, to optimize the university's
-                    technological infrastructure for heightened efficiency and
-                    reliability.
-                  </li>
-                  <li>
-                    Enforced rigorous compliance protocols to ensure adherence
-                    to industry standards for security and regulatory
-                    requirements, surpassing expectations.
-                  </li>
-                  <li>
-                    Employed cutting-edge encryption technology, such as
-                    WinMagic's SecureDoc, to bolster data protection measures
-                    and safeguard sensitive information from unauthorized
-                    access. Customized and optimized interfaces, including SSH
-                    and VNC, to precisely align with the unique operational
-                    needs and workflows of the university community.
-                  </li>
-                  <li>
-                    Authored comprehensive documentation recognized for its
-                    clarity and thoroughness, serving as the definitive resource
-                    for UTA's IT operations and earning accolades for its
-                    meticulousness.
-                  </li>
-                </ol>
-              </div>
-              <div id="experience2">
-                <p class="project-title">🔬 SoNIC Summer Research Workshop</p>
-                <div class="exprience-location-date">
-                  <div class="location">📍 Cornell University, Ithaca, NY</div>
-                  <div class="date">Jun 18, 2024 - Jun 29, 2024</div>
-                </div>
-                <ol class="project-list">
-                  <li>
-                    Participated in a selective weeklong workshop focused on the
-                    intersection of computer vision for assistive technology and
-                    citizen science within the context of social impact theory.
-                  </li>
-                  <li>
-                    Collaborated on a short-term research project under the
-                    mentorship of a faculty member from Cornell Bowers CIS,
-                    gaining hands-on experience in cutting-edge computational
-                    research.
-                  </li>
-                  <li>
-                    Gained insight into the research-oriented career paths in
-                    technology and the journey of obtaining advanced degrees in
-                    the field.
-                  </li>
-                  <li>
-                    Engaged in community-building activities, contributing to a
-                    team project that fostered skills in research collaboration
-                    and technical communication.
-                  </li>
-                  <li>
-                    Discussed graduate school experiences and challenges with
-                    current Ph.D. students, enhancing understanding of academic
-                    pursuits in STEM.
-                  </li>
-                  <li>
-                    Adhered to best practices in code quality, software
-                    development lifecycle, and project management. Implemented
-                    rigorous testing protocols to ensure application reliability
-                    and performance.
-                  </li>
-                  <li>
-                    Utilized Agile methodologies and a Microservices
-                    architecture, enhancing flexibility and product scalability.
-                    This approach facilitated continuous integration and
-                    deployment (CI/CD), aligning with DevOps principles for
-                    efficient development and operational workflows.
-                  </li>
-                </ol>
-              </div>
-              <div id="experience3">
-                <p class="project-title">
-                  🔬 HackUTA 2023 - Major Hacking League (MLH) : Hackathon
-                </p>
-                <div class="exprience-location-date">
-                  <div class="location">📍 Arlington, TX</div>
-                  <div class="date">Oct 7, 2023 - Oct 8, 2023</div>
-                </div>
-                <ol class="project-list">
-                  <li>
-                    Participated in a selective weeklong workshop focused on the
-                    intersection of computer vision for assistive technology and
-                    citizen science within the context of social impact theory.
-                  </li>
-                  <li>
-                    Collaborated on a short-term research project under the
-                    mentorship of a faculty member from Cornell Bowers CIS,
-                    gaining hands-on experience in cutting-edge computational
-                    research.
-                  </li>
-                  <li>
-                    Gained insight into the research-oriented career paths in
-                    technology and the journey of obtaining advanced degrees in
-                    the field.
-                  </li>
-                  <li>
-                    Engaged in community-building activities, contributing to a
-                    team project that fostered skills in research collaboration
-                    and technical communication.
-                  </li>
-                  <li>
-                    Discussed graduate school experiences and challenges with
-                    current Ph.D. students, enhancing understanding of academic
-                    pursuits in STEM.
-                  </li>
-                  <li>
-                    Adhered to best practices in code quality, software
-                    development lifecycle, and project management. Implemented
-                    rigorous testing protocols to ensure application reliability
-                    and performance.
-                  </li>
-                  <li>
-                    Utilized Agile methodologies and a Microservices
-                    architecture, enhancing flexibility and product scalability.
-                    This approach facilitated continuous integration and
-                    deployment (CI/CD), aligning with DevOps principles for
-                    efficient development and operational workflows.
-                  </li>
-                </ol>
-              </div>
-              <div id="experience3">
-                <p class="project-title">
-                  CX & ITS - Office of Information Technology
-                </p>
-                <div class="exprience-location-date">
-                  <div class="location">
-                    📍 University of Texas at Arlington, Arlington, TX
-                  </div>
-                  <div class="date">Aug 16, 2023 - Feb 19, 2024</div>
-                </div>
-                <ol class="project-list">
-                  <li>
-                    Oversaw opening and closing procedures, enforced safety
-                    protocols, and provided customer service.
-                  </li>
-                  <li>
-                    Monitored printers, assisted with computer logins, printing
-                    inquiries, and handled new lab installations or
-                    reconfigurations.
-                  </li>
-                </ol>
-              </div>
+            <!--Project2 | -->
+            <div id="project2">
+              <p class="project-title">🎮 TWSG: The Word Search Game</p>
+              <p class="project-tech-stack">
+                Tech Stack used : Java, JUtil, Javascript, Maven, HTML & CSS
+              </p>
+              <span class="project-pitch">
+                👉
+                <a href="https://github.com/axjh03" target="_blank" class="project-code-link">Use the App now</a>
+                or
+                <a href="https://github.com/utastudents/cse3310_sp24_group_18" target="_blank"
+                  class="project-code-link">View <i class="fab fa-github"></i> for Source Code</a>
+              </span>
+              <ol class="project-list">
+                <li>
+                  Organized the architecture and development of a cutting-edge
+                  food ordering platform utilizing a high-performance stack
+                  with React, Node.js, MongoDB, and TypeScript, focusing on
+                  scalability, maintainability, and user-centric design.
+                </li>
+                <li>
+                  Engineered comprehensive search, sort, filter, and
+                  pagination functionalities, optimizing the restaurant
+                  discovery experience. This included advanced algorithms and
+                  intuitive UI/UX designs to streamline the selection process
+                  and enhance user satisfaction.
+                </li>
+                <li>
+                  Seamlessly integrated Stripe for payment processing,
+                  ensuring a secure, efficient checkout experience.
+                  Implemented robust backend logic to handle transactions and
+                  user data securely.
+                </li>
+                <li>
+                  Deployed WebSocket technology for live order status updates,
+                  creating a dynamic user experience with real-time feedback
+                  on order progression.
+                </li>
+                <li>
+                  Applied Chakra UI and Tailwind CSS for styling, achieving a
+                  responsive, aesthetically pleasing interface across devices.
+                  Focused on mobile-first design principles to cater to a wide
+                  user base.
+                </li>
+                <li>
+                  Adhered to best practices in code quality, software
+                  development lifecycle, and project management. Implemented
+                  rigorous testing protocols to ensure application reliability
+                  and performance.
+                </li>
+                <li>
+                  Utilized Agile methodologies and a Microservices
+                  architecture, enhancing flexibility and product scalability.
+                  This approach facilitated continuous integration and
+                  deployment (CI/CD), aligning with DevOps principles for
+                  efficient development and operational workflows.
+                </li>
+              </ol>
+            </div>
+            <!-- MORE PROJECTS TO BE ADDED -->
+
+            <!--Project2 | -->
+            <div id="project3">
+              <p class="project-title">🎮 TWSG: The Word Search Game</p>
+              <p class="project-tech-stack">
+                Tech Stack used : Java, JUtil, Javascript, Maven, HTML & CSS
+              </p>
+              <span class="project-pitch">
+                👉
+                <a href="https://github.com/axjh03" target="_blank" class="project-code-link">Use the App now</a>
+                or
+                <a href="https://github.com/utastudents/cse3310_sp24_group_18" target="_blank"
+                  class="project-code-link">View <i class="fab fa-github"></i> for Source Code</a>
+              </span>
+              <ol class="project-list">
+                <li>
+                  Organized the architecture and development of a cutting-edge
+                  food ordering platform utilizing a high-performance stack
+                  with React, Node.js, MongoDB, and TypeScript, focusing on
+                  scalability, maintainability, and user-centric design.
+                </li>
+                <li>
+                  Engineered comprehensive search, sort, filter, and
+                  pagination functionalities, optimizing the restaurant
+                  discovery experience. This included advanced algorithms and
+                  intuitive UI/UX designs to streamline the selection process
+                  and enhance user satisfaction.
+                </li>
+                <li>
+                  Seamlessly integrated Stripe for payment processing,
+                  ensuring a secure, efficient checkout experience.
+                  Implemented robust backend logic to handle transactions and
+                  user data securely.
+                </li>
+                <li>
+                  Deployed WebSocket technology for live order status updates,
+                  creating a dynamic user experience with real-time feedback
+                  on order progression.
+                </li>
+                <li>
+                  Applied Chakra UI and Tailwind CSS for styling, achieving a
+                  responsive, aesthetically pleasing interface across devices.
+                  Focused on mobile-first design principles to cater to a wide
+                  user base.
+                </li>
+                <li>
+                  Adhered to best practices in code quality, software
+                  development lifecycle, and project management. Implemented
+                  rigorous testing protocols to ensure application reliability
+                  and performance.
+                </li>
+                <li>
+                  Utilized Agile methodologies and a Microservices
+                  architecture, enhancing flexibility and product scalability.
+                  This approach facilitated continuous integration and
+                  deployment (CI/CD), aligning with DevOps principles for
+                  efficient development and operational workflows.
+                </li>
+              </ol>
             </div>
           </div>
         </div>
-          <div id="contact">
-            <h1>Message me</h1>
-            <div id="contact-container">
-                <div id="contact-details">
-                    <h2>Get in Touch</h2>
-                    <p>You can text or email me on the contact details provided below. Also, you can provide your information and send me a message and I will contact you shortly. Thank you!</p>
-                    <div class="contact-item">
-                      <a href="https://www.instagram.com/axjh03" target="_blank">
-                        <i class="fas fa-user" id="contact-icon"></i>
-                        <span class="value">Alok Jha</span>
-                    </div>
-                    <div class="contact-item">
-                      <a href="https://maps.app.goo.gl/ajxH8qqjmRGhS2ceA" target="_blank">
-                        <i class="fas fa-map-marker-alt" id="contact-icon"></i>
-                        <span class="value">Arlington, Texas</span>
-                      </a>
-                    </div>
-                    <div class="contact-item">
-                      <a href="mailto:axjh03@gmail.com">
-                        <i class="fas fa-envelope" id="contact-icon"></i>
-                        <span class="value">axjh03@gmail.com</span>
-                      </a>
-                    </div>
-                    <div class="contact-item">
-                      <a href="tel:+19452441606">
-                        <i class="fas fa-phone" id="contact-icon"></i>
-                        <span class="value">+1 (945) 244-1606</span>
-                      </a>
-                    </div>
+
+        <div id="experiences">
+          <h1>Experiences</h1>
+          <div id="projects-grid">
+            <div id="experience1">
+              <p class="project-title">
+                🔬 Endpoint Support - Office of Information Technology
+              </p>
+              <div class="exprience-location-date">
+                <div class="location">
+                  📍 University of Texas at Arlington, Arlington, TX
                 </div>
-                <div id="contact-form">
-                    <form action="https://formspree.io/f/mkndlwgk" target="_blank" method="POST">
-                        <div class="form-row">
-                            <div class="form-element">
-                                <input type="text" id="name" name="name" placeholder="Name" />
-                            </div>
-                            <div class="form-element">
-                                <input type="email" id="email" name="email" placeholder="Email" />
-                            </div>
-                        </div>
-                        <div class="form-element">
-                            <input type="tel" name="telephone" id="telephone" placeholder="(555) 555-5555 (Optional)" />
-                        </div>
-                        <div class="form-element">
-                            <input type="text" id="subject" name="_subject" placeholder="Subject" />
-                        </div>
-                        <div class="form-element">
-                            <textarea id="message" name="message" placeholder="Message.."></textarea>
-                        </div>
-                        <div class="form-element">
-                            <input type="submit" value="Send message" />
-                        </div>
-                    </form>
-                </div>
+                <div class="date">Feb 17, 2024 - Present</div>
+              </div>
+              <ol class="project-list">
+                <li>
+                  Spearheaded the implementation and management of
+                  enterprise-grade Linux systems, specializing in Red Hat and
+                  Ubuntu distributions, to optimize the university's
+                  technological infrastructure for heightened efficiency and
+                  reliability.
+                </li>
+                <li>
+                  Enforced rigorous compliance protocols to ensure adherence
+                  to industry standards for security and regulatory
+                  requirements, surpassing expectations.
+                </li>
+                <li>
+                  Employed cutting-edge encryption technology, such as
+                  WinMagic's SecureDoc, to bolster data protection measures
+                  and safeguard sensitive information from unauthorized
+                  access. Customized and optimized interfaces, including SSH
+                  and VNC, to precisely align with the unique operational
+                  needs and workflows of the university community.
+                </li>
+                <li>
+                  Authored comprehensive documentation recognized for its
+                  clarity and thoroughness, serving as the definitive resource
+                  for UTA's IT operations and earning accolades for its
+                  meticulousness.
+                </li>
+              </ol>
             </div>
+            <div id="experience2">
+              <p class="project-title">🔬 SoNIC Summer Research Workshop</p>
+              <div class="exprience-location-date">
+                <div class="location">📍 Cornell University, Ithaca, NY</div>
+                <div class="date">Jun 18, 2024 - Jun 29, 2024</div>
+              </div>
+              <ol class="project-list">
+                <li>
+                  Participated in a selective weeklong workshop focused on the
+                  intersection of computer vision for assistive technology and
+                  citizen science within the context of social impact theory.
+                </li>
+                <li>
+                  Collaborated on a short-term research project under the
+                  mentorship of a faculty member from Cornell Bowers CIS,
+                  gaining hands-on experience in cutting-edge computational
+                  research.
+                </li>
+                <li>
+                  Gained insight into the research-oriented career paths in
+                  technology and the journey of obtaining advanced degrees in
+                  the field.
+                </li>
+                <li>
+                  Engaged in community-building activities, contributing to a
+                  team project that fostered skills in research collaboration
+                  and technical communication.
+                </li>
+                <li>
+                  Discussed graduate school experiences and challenges with
+                  current Ph.D. students, enhancing understanding of academic
+                  pursuits in STEM.
+                </li>
+                <li>
+                  Adhered to best practices in code quality, software
+                  development lifecycle, and project management. Implemented
+                  rigorous testing protocols to ensure application reliability
+                  and performance.
+                </li>
+                <li>
+                  Utilized Agile methodologies and a Microservices
+                  architecture, enhancing flexibility and product scalability.
+                  This approach facilitated continuous integration and
+                  deployment (CI/CD), aligning with DevOps principles for
+                  efficient development and operational workflows.
+                </li>
+              </ol>
+            </div>
+            <div id="experience3">
+              <p class="project-title">
+                🔬 HackUTA 2023 - Major Hacking League (MLH) : Hackathon
+              </p>
+              <div class="exprience-location-date">
+                <div class="location">📍 Arlington, TX</div>
+                <div class="date">Oct 7, 2023 - Oct 8, 2023</div>
+              </div>
+              <ol class="project-list">
+                <li>
+                  Participated in a selective weeklong workshop focused on the
+                  intersection of computer vision for assistive technology and
+                  citizen science within the context of social impact theory.
+                </li>
+                <li>
+                  Collaborated on a short-term research project under the
+                  mentorship of a faculty member from Cornell Bowers CIS,
+                  gaining hands-on experience in cutting-edge computational
+                  research.
+                </li>
+                <li>
+                  Gained insight into the research-oriented career paths in
+                  technology and the journey of obtaining advanced degrees in
+                  the field.
+                </li>
+                <li>
+                  Engaged in community-building activities, contributing to a
+                  team project that fostered skills in research collaboration
+                  and technical communication.
+                </li>
+                <li>
+                  Discussed graduate school experiences and challenges with
+                  current Ph.D. students, enhancing understanding of academic
+                  pursuits in STEM.
+                </li>
+                <li>
+                  Adhered to best practices in code quality, software
+                  development lifecycle, and project management. Implemented
+                  rigorous testing protocols to ensure application reliability
+                  and performance.
+                </li>
+                <li>
+                  Utilized Agile methodologies and a Microservices
+                  architecture, enhancing flexibility and product scalability.
+                  This approach facilitated continuous integration and
+                  deployment (CI/CD), aligning with DevOps principles for
+                  efficient development and operational workflows.
+                </li>
+              </ol>
+            </div>
+            <div id="experience3">
+              <p class="project-title">
+                CX & ITS - Office of Information Technology
+              </p>
+              <div class="exprience-location-date">
+                <div class="location">
+                  📍 University of Texas at Arlington, Arlington, TX
+                </div>
+                <div class="date">Aug 16, 2023 - Feb 19, 2024</div>
+              </div>
+              <ol class="project-list">
+                <li>
+                  Oversaw opening and closing procedures, enforced safety
+                  protocols, and provided customer service.
+                </li>
+                <li>
+                  Monitored printers, assisted with computer logins, printing
+                  inquiries, and handled new lab installations or
+                  reconfigurations.
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
-        
-      </main>
+      </div>
+      <div id="contact">
+        <h1>Message me</h1>
+        <div id="contact-container">
+          <div id="contact-details">
+            <h2>Get in Touch</h2>
+            <p>You can text or email me on the contact details provided below. Also, you can provide your information
+              and send me a message and I will contact you shortly. Thank you!</p>
+            <div class="contact-item">
+              <a href="https://www.instagram.com/axjh03" target="_blank">
+                <i class="fas fa-user" id="contact-icon"></i>
+                <span class="value">Alok Jha</span>
+            </div>
+            <div class="contact-item">
+              <a href="https://maps.app.goo.gl/ajxH8qqjmRGhS2ceA" target="_blank">
+                <i class="fas fa-map-marker-alt" id="contact-icon"></i>
+                <span class="value">Arlington, Texas</span>
+              </a>
+            </div>
+            <div class="contact-item">
+              <a href="mailto:axjh03@gmail.com">
+                <i class="fas fa-envelope" id="contact-icon"></i>
+                <span class="value">axjh03@gmail.com</span>
+              </a>
+            </div>
+            <div class="contact-item">
+              <a href="tel:+19452441606">
+                <i class="fas fa-phone" id="contact-icon"></i>
+                <span class="value">+1 (945) 244-1606</span>
+              </a>
+            </div>
+          </div>
+          <div id="contact-form">
+            <form action="https://formspree.io/f/mkndlwgk" target="_blank" method="POST">
+              <div class="form-row">
+                <div class="form-element">
+                  <input type="text" id="name" name="name" placeholder="Name" />
+                </div>
+                <div class="form-element">
+                  <input type="email" id="email" name="email" placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-element">
+                <input type="tel" name="telephone" id="telephone" placeholder="(555) 555-5555 (Optional)" />
+              </div>
+              <div class="form-element">
+                <input type="text" id="subject" name="_subject" placeholder="Subject" />
+              </div>
+              <div class="form-element">
+                <textarea id="message" name="message" placeholder="Message.."></textarea>
+              </div>
+              <div class="form-element">
+                <input type="submit" value="Send message" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-      <footer></footer>
-    </div>
-  </body>
-  <script>
-    const text = document.querySelector(".sec-text");
+    </main>
 
-    const textLoad = () => {
-      setTimeout(() => {
-        text.textContent = "Developer";
-      }, 0);
-      setTimeout(() => {
-        text.textContent = "Designer";
-      }, 4000);
-      setTimeout(() => {
-        text.textContent = "Student";
-      }, 8000);
-    };
+    <footer></footer>
+  </div>
+</body>
+<script>
+  const text = document.querySelector(".sec-text");
 
-    textLoad();
-    setInterval(textLoad, 12000); // change in 12 sec must match with css steps()
-  </script>
+  const textLoad = () => {
+    setTimeout(() => {
+      text.textContent = "Developer";
+    }, 0);
+    setTimeout(() => {
+      text.textContent = "Designer";
+    }, 4000);
+    setTimeout(() => {
+      text.textContent = "Student";
+    }, 8000);
+  };
+
+  textLoad();
+  setInterval(textLoad, 12000); // change in 12 sec must match with css steps()
+</script>
+
 </html>

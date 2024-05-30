@@ -29,6 +29,9 @@ main{
     padding-bottom: 30%; /* Change this if experience overlapping with projects 
 }*/
 
+.hidden{
+    display: none;
+}
 
 
 h1{
