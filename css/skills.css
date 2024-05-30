@@ -32,3 +32,17 @@
   }
     
 }
+
+@media screen and (max-width: 768px){
+  #skills-icons {
+    align-items: center;
+    font-size: 3.5em;
+  }
+  
+  #skills-text {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 8%;
+  }
+  
+}
