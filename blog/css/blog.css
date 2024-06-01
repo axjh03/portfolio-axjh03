@@ -13,7 +13,6 @@ h1{
 }
 
 
-
 .blog-preview img{
     border-radius: 2.4%;
 }
@@ -34,4 +33,18 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the image within the frame */
+}
+
+
+@media screen and (max-width: 768px){
+    .blog-post-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "blog1"
+                            "blog2"
+                            "blog3"
+                            "blog4"
+                            "blog5"
+                            "blog6";
+    }
+    
 }
