@@ -37,7 +37,7 @@
   <div class="container">
     <!-- <header class="desktop"> -->
     <header id="desktop" class="show">
-      <a href="#" class="logo">AXJH03</a>
+      <a href="#" class="logo"  id="username-desktop">AXJH03</a>
       <ul class="navbar-list">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -51,16 +51,21 @@
     </header>
 
     <header id="phone" class="hidden">
-      <a href="#" class="logo">AXJH03</a>
+      <a href="#" class="logo" id="username-phone">AXJH03</a>
       <div id="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
       </div>
 
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" id="burger-button"></i>
       </a>
     </header>
 
@@ -78,8 +83,8 @@
           <!-- Typewriter effect -->
           <!--Text will go between span-->
           <div class="typeeffect-text-container">
-            <span class="text first-text">I'm a </span>
-            <span class="text sec-text"></span>
+            <span class="text first-text" id="typewrite">I'm a </span>
+            <span class="text sec-text" id="typewrite-dynamic"></span>
           </div>
         </div>
       </div>

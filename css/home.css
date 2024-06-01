@@ -62,6 +62,20 @@
     animation: animate 4s steps(12) infinite;
 }
 
+@media screen and (max-width: 768px){
+  #typewrite{
+    padding-left: 0px;
+    margin-left: 0px;
+    font-size: 1.4em;
+  }
+  #typewrite-dynamic{
+    padding-left: 0px;
+    margin-left: 0px;
+    font-size: 1.4em;
+  }
+  
+}
+
 @keyframes animate {
     40%, 60% {
         left: 100%;
