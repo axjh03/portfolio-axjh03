@@ -106,3 +106,23 @@ margin-right: 10%;
 }
 
 
+@media screen and (max-width: 768px){
+    #projects-grid{
+        margin-left: 3%;
+        margin-right: 3%;
+        
+    }
+    #project1, #project2, #project3, #experience1, #experience2, #experience3{
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 10%;
+    }
+    .project-list li {
+        padding-right: 5%;
+    }
+    .date{
+        padding-right: 5%;
+    }
+    
+}

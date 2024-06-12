@@ -31,7 +31,8 @@ header.sticky{
 
 header .logo{
     position:relative; /* This is to make the z-index work */
-    font-weight: 100;
+    font-weight: 6em;
+    letter-spacing: 5em;
     font-size: 2em;
     /* text-transform: uppercase; */
     letter-spacing: 4px;

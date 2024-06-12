@@ -12,7 +12,9 @@ h1{
     margin-bottom: 0.1em;
 }
 
-
+.hidden{
+    display: none;
+}
 .blog-preview img{
     border-radius: 2.4%;
 }
@@ -47,4 +49,9 @@ h1{
                             "blog6";
     }
     
+    .show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

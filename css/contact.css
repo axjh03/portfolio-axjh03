@@ -117,6 +117,9 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
     #contact-container {
         flex-direction: column; /* Stack on smaller screens */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     #contact-details, #contact-form {
@@ -129,6 +132,12 @@ input[type="submit"]:hover {
 
     .form-row .form-element {
         width: 100%;
+    }
+
+    #contact-containers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 

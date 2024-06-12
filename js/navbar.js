@@ -4,12 +4,24 @@ window.addEventListener('scroll', function() {
     navbar.classList.toggle('sticky', window.scrollY > 0);
 })
 
+
+
+window.addEventListener('load', ()=>{
+  toggleHeaders();
+  var y = document.getElementById("username-phone");
+  y.style.fontSize = "2em";
+  y.style.display = "block";
+  y.style.fontWeight = "300";
+  y.style.color = "aqua";
+})
+
+
 // Function to toggle headers based on screen size
 function toggleHeaders() {
     const desktopHeader = document.getElementById('desktop');
     const phoneHeader = document.getElementById('phone');
   
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 900) {
       desktopHeader.classList.add('hidden');
       desktopHeader.classList.remove('show');
       phoneHeader.classList.add('show');

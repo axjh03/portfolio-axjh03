@@ -11,22 +11,43 @@
   <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
 
   <script src="../js/navbar.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../css/burger.css"></script>
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <a href="../index.html" class="logo">AXJH03</a>
+    <header id="desktop" class="hidden">
+      <a href="../index.html" class="logo"  id="username-desktop">AXJH03</a>
       <ul class="navbar-list">
-        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html/#about">About</a></li>
+        <li><a href="../index.html/#skills">Skills</a></li>
+        <li><a href="../index.html/#">Resume</a></li>
+        <li><a href="../index.html/#certificates">Certificates</a></li>
+        <li><a href="../index.html/#projects">Projects</a></li>
+        <li><a href="../index.html/#experiences">Experiences</a></li>
+        <li><a href="../index.html/#contact">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </header>
+
+    <header id="phone" class="hidden">
+      <a href="../index.html" class="logo" id="username-phone">AXJH03</a>
+      <!-- <div id="myLinks">
+        <li><a href="../index.html/#about">About</a></li>
         <li><a href="../index.html#skills">Skills</a></li>
-        <li><a href="#">Resume</a></li>
+        <li><a href="../index.html#">Resume</a></li>
         <li><a href="../index.html#certificates">Certificates</a></li>
         <li><a href="../index.html#projects">Projects</a></li>
         <li><a href="../index.html#experiences">Experiences</a></li>
         <li><a href="../index.html#contact">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+        <li><a href="/blog/blog.html">Blog</a></li>
+      </div> -->
+
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" id="burger-button"></i>
+      </a>
     </header>
     <main>
       <div id="all-blog-post-container">
