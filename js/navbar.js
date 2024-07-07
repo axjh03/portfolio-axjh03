@@ -11,7 +11,7 @@ window.addEventListener('load', ()=>{
   var y = document.getElementById("username-phone");
   y.style.fontSize = "2em";
   y.style.display = "block";
-  y.style.fontWeight = "300";
+  y.style.fontWeight = "200";
   y.style.color = "aqua";
 })
 

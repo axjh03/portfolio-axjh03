@@ -60,11 +60,12 @@
 
 /* Main styling for the contact form */
 #contact-form {
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
-    flex: 1; /* Allow to grow */
     max-width: 50%; /* Maximum width for larger screens */
     padding: 20px;
+    margin-left: 25%;
     box-sizing: border-box;
 }
 
