@@ -93,6 +93,29 @@ p{
     }
 }
 
+.frame-wide-pic-inbetween {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+
+a {
+    text-decoration: underline;
+    font-size: 1em;
+}
+.wide-pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+}
+
 .left-image-right-text{
 
     display: flex;
