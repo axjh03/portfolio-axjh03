@@ -81,9 +81,16 @@ p{
 
 /* WIDE PIC */
 .frame-wide-pic {
+    margin-top: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    a{
+        text-decoration: underline;
+        font-size: 1em;
+    }
 }
 
 .wide-pic {
