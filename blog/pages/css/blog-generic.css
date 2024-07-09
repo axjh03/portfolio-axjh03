@@ -93,6 +93,41 @@ p{
     }
 }
 
+.left-image-right-text{
+
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 4%;
+    img{
+        width: 30em;
+        height: auto;
+        object-fit:cover; 
+        border-radius: 12px;
+    }
+
+    gap: 2%;
+}
+
+.text-container{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    h1{
+        span{
+            font-size: 0.8em;
+            color: #bdbbb7;
+        }
+        p{
+            font-size: 0.6em;
+            color: #bdbbb7;
+            margin-top: 0.3em;
+        }
+    }
+}
+
 .wide-pic {
     width: 100%;
     height: auto;
