@@ -7,11 +7,15 @@ const useTypewriter = (text, speed = 50) => {
   const indexRef = useRef(0);
 
   useEffect(() => {
+    // Reset the state when text changes
+    setDisplayedText('');
+    indexRef.current = 0;
+    
     const typingInterval = setInterval(() => {
-      setDisplayedText((prev) => prev + text.charAt(indexRef.current));
-      indexRef.current += 1;
-
-      if (indexRef.current >= text.length) {
+      if (indexRef.current < text.length) {
+        setDisplayedText(text.substring(0, indexRef.current + 1));
+        indexRef.current += 1;
+      } else {
         clearInterval(typingInterval);
       }
     }, speed);
@@ -21,7 +25,6 @@ const useTypewriter = (text, speed = 50) => {
 
   return displayedText;
 };
-
 
 const WebIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +50,7 @@ const MatrixLoader = () => {
           key={index}
           className={`flex-1 ${
             index === progress ? 'bg-green-500' : 'bg-transparent'
-          } border-r border-green-500/30 last:border-r-0`}
+          } border-r border-black-500/30 last:border-r-0`}
         />
       ))}
     </div>
@@ -158,14 +161,14 @@ const BootMessages = () => {
           newMessages.push(messages[currentIndex])
           currentIndex++
         }
-        if (newMessages.length > 45) { // Keep only last 15 messages visible
+        if (newMessages.length > 45) {
           newMessages.shift()
         }
         return newMessages
       })
       
       if (currentIndex >= messages.length) {
-        currentIndex = 0 // Reset to start
+        currentIndex = 0
       }
     }, 125)
 
@@ -207,9 +210,9 @@ const MatrixRain = () => {
     canvas.width = canvas.offsetWidth
     canvas.height = canvas.offsetHeight
 
-    const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    const chars = 'अआइईउऊऋएऐओऔअंअःकखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषसह';
     const charArray = chars.split('')
-    const fontSize = 14
+    const fontSize = 20
     const columns = canvas.width / fontSize
 
     const drops = Array(Math.floor(columns)).fill(1)
@@ -293,5 +296,3 @@ export default function MatrixBootLoader() {
     </div>
   );
 }
-
-
