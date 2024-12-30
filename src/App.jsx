@@ -1,15 +1,25 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-
+import { useState } from 'react';
+import Navbar from './components/Navbar';
+import Matrix from "./components/Matrix";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [loaded, setLoad] = useState(false);
+
+  setTimeout(() => {
+    setLoad(true);
+  }, 8000);
 
   return (
-    <>
-    <Navbar />
-    </>
-  )
+    loaded ? (
+      <>
+        <Navbar />
+      </>
+    ) : (
+      <>
+        <Matrix />
+      </>
+    )
+  );
 }
 
-export default App
+export default App;

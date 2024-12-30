@@ -13,7 +13,7 @@ import {
 
 export const Avatar = () => {
   return (
-    <img src="images/avatar.png" className="w-10 h-10 rounded-full" alt="alok's avatar" />
+    <img src="images/avatar.png" className="w-10 h-10 mr-2 rounded-full " alt="alok's avatar" />
   );
 };
 
