@@ -20,7 +20,7 @@ export const Avatar = () => {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "About", "Projects", "Experience", "Contact", "Blog", "Resume"];
+  const menuItems = ["Home", "Skills", "Projects", "Experience", "Contact", "Blog", "Resume"];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>

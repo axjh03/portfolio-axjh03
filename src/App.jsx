@@ -1,18 +1,16 @@
-import { useState } from "react";
-import Matrix from "./components/Matrix";
-import Navbar from "./components/Header";
-import Footer from "./components/Footer";
 import Experience from "./pages/Experience";
-import SplitScreen from "./components/FlexBox/SplitScreen";
-import Blog from "./pages/Blog";
-
+import Projects from "./pages/Projects";
+import About from "./pages/Home";
 function App(){
 
 
   return (
-    <>
+    // add a margin left and right and screen size adaptble
+    <div className="container mx-auto px-4 sm:px-10 lg:px-15">
+      <About/>
+      <Projects/>
       <Experience/>
-    </>
+    </div>
   )
 }
 export default App;

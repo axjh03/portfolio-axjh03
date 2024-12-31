@@ -6,9 +6,15 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import Card from '../components/Card/Card';
+import { projects } from "../data/data";
+
 
 export default function OppositeContentTimeline() {
+
   return (
+    <div className="h-screen my-10">
+    <h1 className="text-4xl font-bold text-center ">Experience</h1>
     <Timeline position="alternate">
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
@@ -18,7 +24,9 @@ export default function OppositeContentTimeline() {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
+        <TimelineContent>
+        <Card {...projects[0]} />
+        </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
@@ -51,5 +59,6 @@ export default function OppositeContentTimeline() {
         <TimelineContent>Repeat</TimelineContent>
       </TimelineItem>
     </Timeline>
+    </div>
   );
 }
