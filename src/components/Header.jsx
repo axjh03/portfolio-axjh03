@@ -17,21 +17,10 @@ export const Avatar = () => {
   );
 };
 
-export default function App() {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
+  const menuItems = ["Home", "About", "Projects", "Experience", "Contact", "Blog", "Resume"];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -49,28 +38,38 @@ export default function App() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Customers
+            {menuItems[0]}
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            Integrations
+          {menuItems[1]}
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+          {menuItems[2]}
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link aria-current="page" href="#">
+          {menuItems[3]}
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+          {menuItems[4]}
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+          {menuItems[5]}
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <Link href="#">Resume</Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>

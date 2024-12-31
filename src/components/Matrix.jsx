@@ -44,12 +44,12 @@ const MatrixLoader = () => {
   }, [])
 
   return (
-    <div className="w-full h-4 bg-black border border-green-500/50 flex">
+    <div className="w-full h-4 bg-black border border-red-500/50 flex">
       {[...Array(totalBlocks)].map((_, index) => (
         <div
           key={index}
           className={`flex-1 ${
-            index === progress ? 'bg-green-500' : 'bg-transparent'
+            index === progress ? 'bg-red-500' : 'bg-transparent'
           } border-r border-black-500/30 last:border-r-0`}
         />
       ))}
@@ -182,14 +182,14 @@ const BootMessages = () => {
           <div 
             key={index}
             className={`${
-              msg.includes('Error') ? 'text-red-500' : 
+              msg.includes('Error') ? 'text-green-300' : 
               msg.includes('Loading') ? 'text-green-500' : 
               msg.includes('Found') ? 'text-green-500' : 
-              msg.includes('Importing') ? 'text-green-500/60' :
-              msg.includes('Initializing') ? 'text-green-400/70' :
+              msg.includes('Importing') ? 'text-red-500/60' :
+              msg.includes('Initializing') ? 'text-red-400/70' :
               msg.includes('Mounting') ? 'text-white' :
               msg.includes('Configuring') ? 'text-yellow-400/75' :
-              'text-green-400/50'
+              'text-red-400/50'
             }`}
           >
             {msg}
@@ -218,7 +218,7 @@ const MatrixRain = () => {
     const drops = Array(Math.floor(columns)).fill(1)
 
     function draw() {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'
+      ctx.fillStyle = 'rgba(1, 1, 0, 0.01)'
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       ctx.fillStyle = '#0F0'
@@ -230,9 +230,9 @@ const MatrixRain = () => {
         const y = drops[i] * fontSize
 
         if (Math.random() < 0.975) {
-          ctx.fillStyle = '#0F0'
+          ctx.fillStyle = 'red'
         } else {
-          ctx.fillStyle = '#FFF'
+          ctx.fillStyle = 'red'
         }
 
         ctx.fillText(char, x, y)
@@ -253,7 +253,7 @@ const MatrixRain = () => {
   return (
     <canvas 
       ref={canvasRef} 
-      className="fixed right-0 top-0 h-full opacity-20 pointer-events-none"
+      className="fixed right-0 top-0 h-full opacity-25 pointer-events-none"
       style={{ width: '400px' }}
     />
   )
@@ -286,7 +286,7 @@ export default function MatrixBootLoader() {
       <div className="matrix-bg absolute inset-0 z-0"></div>
       <MatrixRain />
       <BootMessages />
-      <div className="relative p-8 text-green-500 font-mono text-lg max-w-md w-full z-10 bg-black/80 rounded-none border border-green-500/50">
+      <div className="relative p-8 text-red-500 font-mono text-lg max-w-md w-full z-10 bg-black/80 rounded-none border border-red-500/50">
         <div className="flex items-center space-x-2 mb-4">
           <WebIcon />
           <p className="relative z-10">{text}</p>

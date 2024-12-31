@@ -1,25 +1,18 @@
-import { useState } from 'react';
-import Navbar from './components/Navbar';
+import { useState } from "react";
 import Matrix from "./components/Matrix";
+import Navbar from "./components/Header";
+import Footer from "./components/Footer";
+import Experience from "./pages/Experience";
+import SplitScreen from "./components/FlexBox/SplitScreen";
+import Blog from "./pages/Blog";
 
-function App() {
-  const [loaded, setLoad] = useState(false);
+function App(){
 
-  setTimeout(() => {
-    setLoad(true);
-  }, 8000);
 
   return (
-    loaded ? (
-      <>
-        <Navbar />
-      </>
-    ) : (
-      <>
-        <Matrix />
-      </>
-    )
-  );
+    <>
+      <Experience/>
+    </>
+  )
 }
-
 export default App;

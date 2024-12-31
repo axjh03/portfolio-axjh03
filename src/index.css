@@ -3,3 +3,5 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add background image */
+/* background-image: linear-gradient(to top, #4e0d0d, #470b0d, #400a0c, #39090a, #320808, #2d0808, #280608, #230407, #1d0307, #160206, #0d0103, #000000); */
