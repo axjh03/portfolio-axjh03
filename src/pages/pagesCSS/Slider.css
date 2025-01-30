@@ -1,0 +1,19 @@
+.dark .slider-button {
+  background-color: #d95454; /* Red-300 */
+  color: azure;
+}
+
+.light .slider-button {
+  background-color: #309ece; /* Red-300 */
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .slider-button {
+    display: none;
+  }
+}
+
+.slider-button{
+  display: none;
+}

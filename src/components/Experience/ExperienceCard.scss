@@ -1,0 +1,32 @@
+.dark {
+  .experience-card {
+    background-color: #172637;
+
+    .exp-location {
+      color: gray;
+      font-size: small;
+    }
+
+    .exp-oneLiner {
+     font-size: medium;
+    }
+  }
+}
+
+.light {
+  .experience-card {
+    background-color: #f5f5f5;
+
+    .exp-location {
+      color: gray;
+      font-size: small;
+    }
+    .exp-oneLiner {
+      font-size: medium;
+     }
+  }
+}
+
+.exp-title{
+  font-style: italic;
+}

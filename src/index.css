@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "./animation.scss";
+
+.light a {
+  color: #16a34a; /* Green-600 */
+}
+
+.dark a {
+  color: #d95454; /* Red-300 */
+}
+
+body{
+  font-size: 1.1rem;
+}
+
+/* For mobile devices (up to 600px width) */
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 0.5rem 4rem;
+  }
+}
+
+/* For tablets and small laptops (up to 1024px width) */
+@media only screen and (min-width: 1024px) {
+  body {
+    margin: 0.7rem 6rem;
+  }
+}
+
+/* For large laptops (up to 1440px width) */
+@media only screen and (min-width: 1440px) {
+  body {
+    margin: 0.8rem 7rem;
+  }
+}
+
+/* For desktops (up to 1920px width) */
+@media only screen and (min-width: 1920px) {
+  body {
+    margin: 1rem 8rem;
+  }
+}
+
+/* For 4k screens (up to 3840px width) */
+@media only screen and (min-width: 3840px) {
+  body {
+    margin: 1.1rem 9rem;
+  }
+}

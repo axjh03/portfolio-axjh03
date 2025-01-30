@@ -1,0 +1,7 @@
+@media screen and (min-width: 420px) {
+  .contact-text {
+    margin: 1rem 2rem;
+    align-items: center;
+    text-align: center;
+  }
+}
