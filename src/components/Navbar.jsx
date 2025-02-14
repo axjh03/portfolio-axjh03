@@ -41,7 +41,7 @@ function Navbar() {
 
       {/* Desktop Navbar */}
       <div className="hidden md:flex justify-center w-full py-5">
-        <div className={`navbar ${theme} rounded-xl w-[90%] max-w-7xl mx-auto flex items-center justify-between px-6`}>
+        <div className={`navbar ${theme} rounded-xl w-[90%] max-w-7xl mx-auto flex items-center justify-between px-7`}>
           {/* Avatar on the left */}
           <img
             className="object-cover rounded-full w-12 h-12"

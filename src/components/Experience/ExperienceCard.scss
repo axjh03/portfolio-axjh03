@@ -1,32 +1,129 @@
+@mixin gradient-animation($color1, $color2, $color3, $color4) {
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    $color1 0%,
+    $color2 25%,
+    $color3 51%,
+    $color4 100%
+  );
+  animation: AnimateGradient 15s ease infinite;
+}
+
+@keyframes AnimateGradient {
+  0% { background-position: 10% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+.experience-card {
+  transition: all 0.2s ease;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &::before {
+      opacity: 0.2;
+    }
+  }
+
+  img {
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
 .dark {
   .experience-card {
-    background-color: #172637;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &::before {
+      @include gradient-animation(#f6efff, #6245e1, #000000, #2d333a);
+    }
+
+    &:hover {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .exp-title {
+      color: #bb86fc;
+    }
 
     .exp-location {
-      color: gray;
-      font-size: small;
+      color: #03dac6;
     }
 
     .exp-oneLiner {
-     font-size: medium;
+      color: #a0a0a0;
     }
   }
 }
 
 .light {
   .experience-card {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+    &::before {
+      @include gradient-animation(#9da126, #e49d23, #1063a8, #8d9b54);
+    }
+
+    &:hover {
+      box-shadow: 0 14px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .exp-title {
+      color: #1976d2;
+    }
 
     .exp-location {
-      color: gray;
-      font-size: small;
+      color: #388e3c;
     }
+
     .exp-oneLiner {
-      font-size: medium;
-     }
+      color: #555555;
+    }
   }
 }
 
-.exp-title{
+.exp-title {
   font-style: italic;
+}
+
+.exp-location {
+  font-size: 0.9rem;
+}
+
+.exp-oneLiner {
+  font-size: 1rem;
+  line-height: 1.4;
 }

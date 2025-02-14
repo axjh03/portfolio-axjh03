@@ -19,34 +19,31 @@ function ExperienceCard({ image, title, oneLiner, name, url, date, location, det
 
   return (
     <>
-      {/* Backdrop blur overlay */}
       {isDialogOpen && (
         <div 
-          className="fixed inset-0 bg-black/30 backdrop-blur-xs z-40"
+          className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40"
           aria-hidden="true"
         />
       )}
 
-      {/* Experience Card */}
       <div
-        className="flex flex-col md:flex-row items-center md:items-start shadow-xl p-4 m-2 rounded-lg transition-transform duration-500 hover:scale-105 hover:shadow-3xl cursor-pointer relative experience-card"
+        className="experience-card flex flex-col md:flex-row items-center md:items-start p-6 m-4 rounded-xl transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-lg cursor-pointer relative"
         onClick={openDialog}
       >
         <img 
           src={image} 
           alt={title} 
-          className="w-20 h-20 object-cover rounded-md md:mr-4 mb-2 md:mb-0" 
+          className="w-24 h-24 object-cover rounded-full md:mr-6 mb-4 md:mb-0 border-4 border-opacity-50" 
         />
-        <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold">{name}</h3>
-          <p className="exp-title">{title}</p>
-          <p className="exp-location">{location}</p>
-          <p className="exp-oneLiner">{oneLiner}</p>
-          <p className="text-sm text-gray-500">{date}</p>
+        <div className="text-center md:text-left flex-1">
+          <h3 className="text-xl font-bold mb-2">{name}</h3>
+          <p className="exp-title text-lg mb-1">{title}</p>
+          <p className="exp-location mb-2">{location}</p>
+          <p className="exp-oneLiner mb-3">{oneLiner}</p>
+          <p className="text-sm opacity-75">{date}</p>
         </div>
       </div>
 
-      {/* Modal */}
       <DialogBox 
         ref={dialogRef} 
         title={title} 
