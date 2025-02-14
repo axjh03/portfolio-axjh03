@@ -7,16 +7,20 @@ import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
+import Project from "./pages/Project";
+import StickyEmail from "./components/Sticky/StickyEmail";
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <div className={theme === "dark" ? "dark" : "light"}>
-      {/* <Navbar /> */}
+      <Navbar />
       <About />
       <Experience />
-      <Skills />
+      {/* <Skills /> */}
+      <Project />
+      <StickyEmail />
       <Contact />
     </div>
   );
