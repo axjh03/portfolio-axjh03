@@ -1,5 +1,22 @@
-@media screen and (min-width: 950px) {
-    .about{
-        margin-top: 100px;
+@keyframes tilt {
+    0%, 50%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(1deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+  }
+  
+  .animate-tilt {
+    animation: tilt 10s infinite linear;
+  }
+  
+  @media screen and (min-width: 950px) {
+    .about {
+      margin-top: 100px;
     }  
-}
+  }
+  
