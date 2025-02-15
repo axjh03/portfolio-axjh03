@@ -31,7 +31,7 @@ function About() {
                 : "bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"
             }`}
           >
-            Aalok
+            Alok Jha
           </h1>
           <h2 className={`mt-2 text-2xl font-semibold ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
             Full-Stack Developer | CS Junior
@@ -53,6 +53,7 @@ function About() {
 
           <motion.button 
             whileHover={{ scale: 1.05 }}
+            onClick={() => window.open("https://drive.google.com/file/d/11DuKsmZNdSLVsnNVs3TzLbVVNQEUiEEU/view", "_blank")}
             whileTap={{ scale: 0.95 }}
             className={`group mt-8 px-6 py-3 rounded-full font-semibold text-white shadow-lg
               flex items-center space-x-2
@@ -81,10 +82,10 @@ function About() {
 />
           </div>
           <div className="mt-4 flex space-x-4">
-            <SocialButton icon={Instagram} link="https://www.instagram.com" />
-            <SocialButton icon={Github} link="https://github.com" />
+            <SocialButton icon={Instagram} link="https://www.instagram.com/axjh03" />
+            <SocialButton icon={Github} link="https://github.com/axjh03" />
             <SocialButton icon={Code} link="https://leetcode.com" />
-            <SocialButton icon={Linkedin} link="https://www.linkedin.com" />
+            <SocialButton icon={Linkedin} link="https://www.linkedin.com/in/axjh03" />
           </div>
         </motion.div>
       </div>
