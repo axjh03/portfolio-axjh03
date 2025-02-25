@@ -5,6 +5,7 @@ import { useTheme } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
+import Education from "./pages/Education";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Project from "./pages/Project";
@@ -19,7 +20,8 @@ const App = () => {
       <About />
       <Experience />
       {/* <Skills /> */}
-      <Project />
+      {/* <Project /> */}
+      <Education />
       <StickyEmail />
       <Contact />
     </div>
