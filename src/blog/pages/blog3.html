@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Git Commands Every Developer Should Know</title>
+    <link rel="stylesheet" href="css/blog-generic.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="icon" href="../../media/favicon.ico" type="image/x-icon">
+    <script src="../../js/navbar.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../../index.html" class="logo">AXJH03</a>
+            <ul class="navbar-list">
+                <li><a href="../../index.html#about">About</a></li>
+                <li><a href="../../index.html#skills">Skills</a></li>
+                <li><a href="https://drive.google.com/file/d/11DuKsmZNdSLVsnNVs3TzLbVVNQEUiEEU/view?usp=sharing">Resume</a></li>
+                <li><a href="../../index.html#projects">Projects</a></li>
+                <li><a href="../../index.html#experiences">Experiences</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+                <li><a href="/blog/blog.html">Blog</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="before-wide-pic">
+                <h1 class="article-title">10 Git Commands Every Developer Should Know</h1>
+                <p class="article-short-description">Master Git with These Essential Commands Today</p>
+
+                <div class="article-author">
+                    <img class="author-pic" src="../images/alok-author.png" alt="Author Picture">
+                    <p class="author-name">Alok Jha</p>
+                    <p class="article-date">Apr 6, 2024 &bull; 4 min read</p>
+                </div>
+            </div>
+
+            <div class="frame-wide-pic">
+                <img class="wide-pic" src="https://miro.medium.com/v2/resize:fit:1400/1*eGdNATA_BGQcA1xUvc9Irg.png" alt="Windows for Development">
+            </div>
+
+            <div class="after-wide-pic">
+                <p class="article-subtitles">1. Git Clone</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git clone</code> downloads an existing repository to your local machine. It's useful for getting started with a project hosted on platforms like GitHub.</p>
+                    <pre><code>git clone &lt;https://repository-link&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">2. Git Branch</p>
+                <ol>
+                    <p class="article-content">Branches allow multiple developers to work on a project simultaneously. Use <code class="in-line-code">git branch</code> to create, list, or delete branches.</p>
+                    <pre><code>git branch &lt;branch-name&gt;</code></pre>
+                    <p class="article-content">Push the new branch to the remote repository:</p>
+                    <pre><code>git push -u &lt;remote&gt; &lt;branch-name&gt;</code></pre>
+                    <p class="article-content">View branches:</p>
+                    <pre><code>git branch</code> or <code>git branch --list</code></pre>
+                    <p class="article-content">Delete a branch:</p>
+                    <pre><code>git branch -d &lt;branch-name&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">3. Git Checkout</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git checkout</code> switches branches or restores working tree files. Create and switch to a new branch with:</p>
+                    <pre><code>git checkout -b &lt;branch-name&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">4. Git Status</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git status</code> displays the state of the working directory and staging area. It lets you see which changes have been staged, which haven't, and which files aren’t being tracked by Git.</p>
+                    <pre><code>git status</code></pre>
+                </ol>
+                <p class="article-subtitles">5. Git Add</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git add</code> stages changes for the next commit. Add a single file:</p>
+                    <pre><code>git add &lt;file&gt;</code></pre>
+                    <p class="article-content">Add all changes:</p>
+                    <pre><code>git add -A</code></pre>
+                </ol>
+                <p class="article-subtitles">6. Git Commit</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git commit</code> saves your changes to the local repository. Always include a message:</p>
+                    <pre><code>git commit -m "commit message"</code></pre>
+                </ol>
+                <p class="article-subtitles">7. Git Push</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git push</code> uploads your local commits to a remote repository. Push your changes with:</p>
+                    <pre><code>git push &lt;remote&gt; &lt;branch-name&gt;</code></pre>
+                    <p class="article-content">For a new branch:</p>
+                    <pre><code>git push --set-upstream &lt;remote&gt; &lt;branch-name&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">8. Git Pull</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git pull</code> fetches and merges changes from the remote server to your working directory.</p>
+                    <pre><code>git pull &lt;remote&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">9. Git Revert</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git revert</code> undoes changes by creating a new commit. Find the commit hash with <code class="in-line-code">git log --oneline</code>, then revert it:</p>
+                    <pre><code>git revert &lt;commit-hash&gt;</code></pre>
+                </ol>
+                <p class="article-subtitles">10. Git Merge</p>
+                <ol>
+                    <p class="article-content"><code class="in-line-code">git merge</code> integrates changes from one branch into another. Switch to the branch you want to merge into:</p>
+                    <pre><code>git checkout &lt;branch-to-merge-into&gt;</code></pre>
+                    <p class="article-content">Then merge the changes:</p>
+                    <pre><code>git merge &lt;branch-to-merge&gt;</code></pre>
+                </ol>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
