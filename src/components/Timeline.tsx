@@ -30,7 +30,7 @@ function Timeline() {
 
 <VerticalTimelineElement
   className="vertical-timeline-element--work"
-  date="Sep 2022 – May 2023"
+  date="August 2023 – Present"
   iconStyle={{ background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
   icon={
     <img
@@ -53,7 +53,7 @@ function Timeline() {
 
 <VerticalTimelineElement
   className="vertical-timeline-element--work"
-  date="Sep 2023 – Present"
+  date="June 2024 – June 2024"
   iconStyle={{ background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
   icon={
     <img
@@ -76,7 +76,7 @@ function Timeline() {
 
 <VerticalTimelineElement
   className="vertical-timeline-element--work"
-  date="Jan 2024 – Present"
+  date="Jan 2024 – Feb 2024"
   iconStyle={{ background: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
   icon={
     <img
