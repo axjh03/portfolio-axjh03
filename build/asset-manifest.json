@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio-template/static/css/main.f19fb152.css",
-    "main.js": "/react-portfolio-template/static/js/main.7c3a2059.js",
-    "static/js/453.b05d8aa5.chunk.js": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js",
-    "static/media/avatar.png": "/react-portfolio-template/static/media/avatar.190680cb286f70acb89f.png",
-    "static/media/ornale.png": "/react-portfolio-template/static/media/ornale.5a2282495f87eaabeb1e.png",
-    "static/media/objdetect.png": "/react-portfolio-template/static/media/objdetect.b77daa58b39f1e72f881.png",
-    "static/media/chainlit.png": "/react-portfolio-template/static/media/chainlit.da3ff286e170d33a00e2.png",
-    "static/media/bg-light.png": "/react-portfolio-template/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/twsg.png": "/react-portfolio-template/static/media/twsg.eb570560d9e60174f7af.png",
-    "static/media/bg-dark.png": "/react-portfolio-template/static/media/bg-dark.f420c6b8458af72de935.png",
-    "index.html": "/react-portfolio-template/index.html",
-    "main.f19fb152.css.map": "/react-portfolio-template/static/css/main.f19fb152.css.map",
-    "main.7c3a2059.js.map": "/react-portfolio-template/static/js/main.7c3a2059.js.map",
-    "453.b05d8aa5.chunk.js.map": "/react-portfolio-template/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "//static/css/main.f19fb152.css",
+    "main.js": "//static/js/main.7c3a2059.js",
+    "static/js/453.b05d8aa5.chunk.js": "//static/js/453.b05d8aa5.chunk.js",
+    "static/media/avatar.png": "//static/media/avatar.190680cb286f70acb89f.png",
+    "static/media/ornale.png": "//static/media/ornale.5a2282495f87eaabeb1e.png",
+    "static/media/objdetect.png": "//static/media/objdetect.b77daa58b39f1e72f881.png",
+    "static/media/chainlit.png": "//static/media/chainlit.da3ff286e170d33a00e2.png",
+    "static/media/bg-light.png": "//static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/twsg.png": "//static/media/twsg.eb570560d9e60174f7af.png",
+    "static/media/bg-dark.png": "//static/media/bg-dark.f420c6b8458af72de935.png",
+    "index.html": "//index.html",
+    "main.f19fb152.css.map": "//static/css/main.f19fb152.css.map",
+    "main.7c3a2059.js.map": "//static/js/main.7c3a2059.js.map",
+    "453.b05d8aa5.chunk.js.map": "//static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f19fb152.css",
