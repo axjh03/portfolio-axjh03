@@ -85,7 +85,7 @@ function ImageSlider({ images, mode }: ImageSliderProps) {
       <div style={imageContainerStyle}>
         <img
           src={images[currentIndex] || "/placeholder.svg"}
-          alt={`Project image ${currentIndex + 1}`}
+          alt={`Project ${currentIndex + 1}`}
           style={imageStyle}
         />
 
