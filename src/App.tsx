@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   Main,
   Timeline,
@@ -7,11 +8,12 @@ import {
   Contact,
   Navigation,
   Footer,
+  BlogPage,
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
 
-function App() {
+const HomePage = () => {
     const [mode, setMode] = useState<string>('light');
 
     const handleModeChange = () => {
@@ -23,7 +25,7 @@ function App() {
     }
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        window.scrollTo({top: -15, left: 0, behavior: 'smooth'});
       }, []);
 
     return (
@@ -33,12 +35,24 @@ function App() {
             <Main/>
             <Expertise/>
             <Timeline/>
-            <Project/>
+            <Project parentToChild={{mode}}/>
             <Contact/>
         </FadeIn>
         <Footer />
     </div>
     );
+}
+
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<BlogPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
