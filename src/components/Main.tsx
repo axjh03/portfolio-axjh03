@@ -4,7 +4,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import '../assets/styles/Main.scss';
 import avatar from '../assets/images/avatar.png';
 
-function Main() {
+function Main({ parentToChild }: any) {
+  const { mode } = parentToChild;
+  const isDark = mode === 'dark';
 
   return (
     <div className="container">
@@ -25,30 +27,30 @@ function Main() {
             className="resume-button"
             onClick={() => window.open('https://example.com/resume', '_blank')}
             style={{
-              backgroundColor: 'rgba(15, 23, 42, 0.25)',
-              backdropFilter: 'blur(20px)',
-              WebkitBackdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
+              backgroundColor: isDark ? 'rgba(15, 23, 42, 0.25)' : 'rgba(255, 255, 255, 0.25)',
+              backdropFilter: 'blur(10px)',
+              WebkitBackdropFilter: 'blur(10px)',
+              border: isDark ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid rgba(0, 0, 0, 0.1)',
               borderRadius: '20px',
               padding: '12px 24px',
-              color: '#f1f5f9',
+              color: isDark ? '#f1f5f9' : '#1e293b',
               fontSize: '14px',
               fontWeight: '500',
               cursor: 'pointer',
               transition: 'all 0.3s ease',
               marginTop: '16px',
               fontFamily: '"Inter", sans-serif',
-              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)',
+              boxShadow: isDark ? '0 4px 16px rgba(0, 0, 0, 0.2)' : '0 4px 16px rgba(0, 0, 0, 0.1)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.4)';
+              e.currentTarget.style.backgroundColor = isDark ? 'rgba(15, 23, 42, 0.4)' : 'rgba(255, 255, 255, 0.4)';
               e.currentTarget.style.transform = 'translateY(-1px)';
-              e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.4)';
+              e.currentTarget.style.boxShadow = isDark ? '0 8px 32px rgba(0, 0, 0, 0.4)' : '0 8px 32px rgba(0, 0, 0, 0.2)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.25)';
+              e.currentTarget.style.backgroundColor = isDark ? 'rgba(15, 23, 42, 0.25)' : 'rgba(255, 255, 255, 0.25)';
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.2)';
+              e.currentTarget.style.boxShadow = isDark ? '0 4px 16px rgba(0, 0, 0, 0.2)' : '0 4px 16px rgba(0, 0, 0, 0.1)';
             }}
           >
             View Resume

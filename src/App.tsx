@@ -14,7 +14,7 @@ import FadeIn from './components/FadeIn';
 import './index.scss';
 
 const HomePage = () => {
-    const [mode, setMode] = useState<string>('light');
+    const [mode, setMode] = useState<string>('dark');
 
     const handleModeChange = () => {
         if (mode === 'dark') {
@@ -32,7 +32,7 @@ const HomePage = () => {
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
-            <Main/>
+            <Main parentToChild={{mode}}/>
             <Expertise/>
             <Timeline parentToChild={{mode}}/>
             <Project parentToChild={{mode}}/>
