@@ -9,6 +9,7 @@ import {
   Navigation,
   Footer,
   BlogPage,
+  VisitorTracker,
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -39,6 +40,7 @@ const HomePage = () => {
             <Contact/>
         </FadeIn>
         <Footer />
+        <VisitorTracker />
     </div>
     );
 }

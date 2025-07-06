@@ -40,7 +40,7 @@ function Navigation({ parentToChild, modeChange }: any) {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 50;
-      setScrolled(scrolled);
+        setScrolled(scrolled);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -54,11 +54,11 @@ function Navigation({ parentToChild, modeChange }: any) {
     if (location.pathname !== '/') {
         window.location.href = '/#' + section;
     } else {
-        const targetElement = document.getElementById(section);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        } else {
-          console.error(`Element with id "${section}" not found`);
+    const targetElement = document.getElementById(section);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.error(`Element with id "${section}" not found`);
         }
     }
   };
@@ -71,9 +71,9 @@ function Navigation({ parentToChild, modeChange }: any) {
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
             {item[2] === 'internal' ? (
-              <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
-                <ListItemText primary={item[0]} />
-              </ListItemButton>
+            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+              <ListItemText primary={item[0]} />
+            </ListItemButton>
             ) : (
               <ListItemButton sx={{ textAlign: 'center' }} component={Link} to={item[1]}>
                 <ListItemText primary={item[0]} />
@@ -247,18 +247,18 @@ function Navigation({ parentToChild, modeChange }: any) {
               </Typography>
               
               {/* Mobile Menu Button */}
-              <IconButton
-                aria-label="open drawer"
-                onClick={handleDrawerToggle}
+          <IconButton
+            aria-label="open drawer"
+            onClick={handleDrawerToggle}
                 sx={{ ...mobileMenuButtonStyle, display: { sm: 'none' } }}
-              >
-                <MenuIcon />
-              </IconButton>
+          >
+            <MenuIcon />
+          </IconButton>
             </Box>
 
             {/* Center Section - Navigation Items (Desktop Only) */}
             <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center', gap: '8px' }}>
-              {navItems.map((item) => (
+            {navItems.map((item) => (
                 item[2] === 'internal' ? (
                   <Button 
                     key={item[0]} 
@@ -274,11 +274,11 @@ function Navigation({ parentToChild, modeChange }: any) {
                     to={item[1]} 
                     sx={navButtonStyle}
                   >
-                    {item[0]}
-                  </Button>
+                {item[0]}
+              </Button>
                 )
-              ))}
-            </Box>
+            ))}
+          </Box>
 
             {/* Right Section - Theme Toggle & Mobile Logo */}
             <Box sx={rightSectionStyle}>
@@ -297,7 +297,7 @@ function Navigation({ parentToChild, modeChange }: any) {
                 {mode === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}
               </IconButton>
             </Box>
-          </Toolbar>
+        </Toolbar>
         </Box>
       </Box>
 

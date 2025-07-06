@@ -260,7 +260,7 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
     fontWeight: '500',
   };
 
-  return (
+    return (
     <div 
       style={cardStyle}
       onMouseEnter={(e) => {
@@ -278,7 +278,7 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
         {/* Category */}
         <div style={categoryStyle}>
           <span style={categoryTextStyle}>{project.category}</span>
-        </div>
+                </div>
 
         {/* Image Slider */}
         <ImageSlider images={project.images} mode={mode} />
@@ -290,7 +290,7 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
         <div style={statusContainerStyle}>
           <div style={statusDotStyle(project.title.includes('TWSG'))}></div>
           <span style={statusTextStyle}>{project.title.includes('TWSG') ? 'Live Preview Offline' : 'Online & Ready for Preview'}</span>
-        </div>
+                </div>
 
         {/* Action Buttons */}
         <div style={buttonsContainerStyle}>
@@ -382,10 +382,10 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
               </span>
             ))}
           </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 interface ProjectProps {
