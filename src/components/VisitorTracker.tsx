@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 
 const VisitorTracker: React.FC = () => {
   const hasTracked = useRef(false);
@@ -28,12 +28,12 @@ const VisitorTracker: React.FC = () => {
     return 'Unknown';
   };
 
-  const getBrowserVersion = (): string => {
+  const getBrowserVersion = useCallback((): string => {
     const userAgent = navigator.userAgent;
     const browser = getBrowser();
     const versionMatch = userAgent.match(new RegExp(`${browser}\\/(\\d+)`));
     return versionMatch ? versionMatch[1] : 'Unknown';
-  };
+  }, []);
 
   const getOS = (): string => {
     const userAgent = navigator.userAgent;
@@ -45,12 +45,12 @@ const VisitorTracker: React.FC = () => {
     return 'Unknown';
   };
 
-  const getOSVersion = (): string => {
+  const getOSVersion = useCallback((): string => {
     const userAgent = navigator.userAgent;
     const os = getOS();
     const versionMatch = userAgent.match(new RegExp(`${os}\\s*(\\d+[._]\\d+)`));
     return versionMatch ? versionMatch[1] : 'Unknown';
-  };
+  }, []);
 
   const getWebGLInfo = () => {
     try {
