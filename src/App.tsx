@@ -34,7 +34,7 @@ const HomePage = () => {
         <FadeIn transitionDuration={700}>
             <Main/>
             <Expertise/>
-            <Timeline/>
+            <Timeline parentToChild={{mode}}/>
             <Project parentToChild={{mode}}/>
             <Contact/>
         </FadeIn>

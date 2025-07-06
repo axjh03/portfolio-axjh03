@@ -2,7 +2,25 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss';
 
-function Timeline() {
+function Timeline({ parentToChild }: any) {
+  const { mode } = parentToChild;
+  const isDark = mode === 'dark';
+
+  const timelineCardStyle = {
+    backgroundColor: isDark ? 'rgba(15, 23, 42, 0.8)' : '#fff',
+    color: isDark ? '#f1f5f9' : '#1e293b',
+    boxShadow: isDark 
+      ? '0 8px 32px rgba(0, 0, 0, 0.4)' 
+      : '0 3px 0 #ddd',
+    border: isDark ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+    backdropFilter: isDark ? 'blur(20px)' : 'none',
+    WebkitBackdropFilter: isDark ? 'blur(20px)' : 'none',
+  };
+
+  const timelineArrowStyle = {
+    borderRightColor: isDark ? 'rgba(15, 23, 42, 0.8)' : '#fff',
+  };
+
   return (
     <div id="history">
       <div className="items-container">
@@ -20,6 +38,8 @@ function Timeline() {
       style={{ width: '100%', height: '100%',  borderRadius:'50%' }}
     />
   }
+  contentStyle={timelineCardStyle}
+  contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Full Stack SWE Intern</h3>
   <h4 className="vertical-timeline-element-subtitle">Austin, TX</h4>
@@ -39,6 +59,8 @@ function Timeline() {
       style={{ width: '100%', height: '100%' }}
     />
   }
+  contentStyle={timelineCardStyle}
+  contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Student Administrative Support</h3>
   <h4 className="vertical-timeline-element-subtitle">Arlington, TX</h4>
@@ -62,6 +84,8 @@ function Timeline() {
       style={{ width: '100%', height: '100%' }}
     />
   }
+  contentStyle={timelineCardStyle}
+  contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Student Researcher</h3>
   <h4 className="vertical-timeline-element-subtitle">Ithaca, NY</h4>
@@ -85,6 +109,8 @@ function Timeline() {
       style={{ width: '100%', height: '100%', borderRadius:'50%' }}
     />
   }
+  contentStyle={timelineCardStyle}
+  contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Software Engineering Fellow</h3>
   <h4 className="vertical-timeline-element-subtitle">Remote</h4>

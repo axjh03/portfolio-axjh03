@@ -31,8 +31,37 @@
     color: white;
 }
 
+/* Dark mode styles */
+.dark-mode .vertical-timeline-element p {
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .vertical-timeline-element h3 {
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .vertical-timeline-element h4 {
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .vertical-timeline-element span {
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .vertical-timeline-element .vertical-timeline-element-title {
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .vertical-timeline-element .vertical-timeline-element-subtitle {
+    color: #f1f5f9 !important;
+}
+
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {
         color: rgb(39, 40, 34);
+    }
+    
+    .dark-mode .vertical-timeline-element .vertical-timeline-element-date {
+        color: #f1f5f9 !important;
     }
 }

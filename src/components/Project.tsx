@@ -34,7 +34,7 @@ function ImageSlider({ images, mode }: ImageSliderProps) {
 
   const imageStyle = {
     width: '100%',
-    height: '192px',
+    height: '280px',
     objectFit: 'cover' as const,
     transition: 'all 0.3s ease',
   };
@@ -135,8 +135,6 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
   
   const cardStyle = {
     width: '100%',
-    maxWidth: '384px',
-    margin: '0 auto',
     backgroundColor: isDark ? '#1f2937' : 'white',
     borderRadius: '12px',
     boxShadow: isDark 
@@ -153,6 +151,7 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
 
   const categoryStyle = {
     marginBottom: '16px',
+    textAlign: 'center' as const,
   };
 
   const categoryTextStyle = {
@@ -178,12 +177,12 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
     marginBottom: '12px',
   };
 
-  const statusDotStyle = {
+  const statusDotStyle = (isOffline: boolean) => ({
     width: '8px',
     height: '8px',
     borderRadius: '50%',
-    backgroundColor: '#10b981',
-  };
+    backgroundColor: isOffline ? '#ef4444' : '#10b981',
+  });
 
   const statusTextStyle = {
     fontSize: '12px',
@@ -289,8 +288,8 @@ function ProjectCard({ project, mode }: ProjectCardProps) {
 
         {/* Status Indicator */}
         <div style={statusContainerStyle}>
-          <div style={statusDotStyle}></div>
-          <span style={statusTextStyle}>Active</span>
+          <div style={statusDotStyle(project.title.includes('TWSG'))}></div>
+          <span style={statusTextStyle}>{project.title.includes('TWSG') ? 'Live Preview Offline' : 'Online & Ready for Preview'}</span>
         </div>
 
         {/* Action Buttons */}
@@ -422,10 +421,11 @@ const Project = ({ parentToChild }: ProjectProps) => {
 
   const gridStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '24px',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '32px',
     maxWidth: '1200px',
     margin: '0 auto',
+    padding: '0 16px',
   };
 
   return (

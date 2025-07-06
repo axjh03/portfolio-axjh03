@@ -65,7 +65,7 @@ function Navigation({ parentToChild, modeChange }: any) {
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon />Menu</p>
+      <p className="mobile-menu-top" style={{ color: mode === 'dark' ? '#f1f5f9' : '#1e293b' }}><ListIcon />Menu</p>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -318,6 +318,16 @@ function Navigation({ parentToChild, modeChange }: any) {
               backgroundColor: isDark ? 'rgba(15, 23, 42, 0.95)' : 'rgba(255, 255, 255, 0.95)',
               backdropFilter: 'blur(20px)',
               border: 'none',
+              color: isDark ? '#f1f5f9' : '#1e293b',
+            },
+            '& .MuiListItemText-primary': {
+              color: isDark ? '#f1f5f9' : '#1e293b',
+            },
+            '& .MuiListItemButton-root': {
+              color: isDark ? '#f1f5f9' : '#1e293b',
+              '&:hover': {
+                backgroundColor: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)',
+              },
             },
           }}
         >
