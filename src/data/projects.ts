@@ -36,7 +36,7 @@ export const projects: Project[] = [
       "Render", 
       "Netlify"
     ],
-    demoUrl: "https://qalam-axjh03.netlify.app/",
+    demoUrl: "https://rad-truffle-6266c3.netlify.app/",
     sourceUrl: "https://github.com/axjh03/Qalam",
   },
   {
