@@ -12,7 +12,12 @@ function Main({ parentToChild }: any) {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-        <img src={avatar} alt="Avatar" />
+        <img 
+          src={avatar} 
+          alt="Avatar" 
+          loading="lazy"
+          style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+        />
         </div>
         <div className="content">
           <div className="social_icons">
@@ -25,7 +30,7 @@ function Main({ parentToChild }: any) {
           
           <button 
             className="resume-button"
-            onClick={() => window.open('https://example.com/resume', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1FjKmV_QoJElCulB75vVfW8MdaM2UtFhB/view?usp=sharing', '_blank')}
             style={{
               backgroundColor: isDark ? 'rgba(15, 23, 42, 0.25)' : 'rgba(255, 255, 255, 0.25)',
               backdropFilter: 'blur(10px)',

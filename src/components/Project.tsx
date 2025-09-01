@@ -397,7 +397,7 @@ const Project = ({ parentToChild }: ProjectProps) => {
   const isDark = mode === 'dark';
 
   const containerStyle = {
-    padding: '80px 10%',
+    padding: '80px 6%',
     backgroundColor: isDark ? '#0d1116' : '#f8f9fa',
     minHeight: '100vh',
   };
@@ -421,11 +421,11 @@ const Project = ({ parentToChild }: ProjectProps) => {
 
   const gridStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
     gap: '32px',
-    maxWidth: '1200px',
+    maxWidth: '1400px',
     margin: '0 auto',
-    padding: '0 16px',
+    padding: '0 8px',
   };
 
   return (

@@ -42,9 +42,9 @@ function Timeline({ parentToChild }: any) {
   contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Full Stack SWE Intern</h3>
-  <h4 className="vertical-timeline-element-subtitle">Austin, TX</h4>
+  <h4 className="vertical-timeline-element-subtitle">Realtor.com • Austin, TX</h4>
   <p>
-    [will add after end of internship]
+    I interned at Realtor.com where I built automated features to help property builders manage their listings more easily. I worked on modernizing their billing system using data pipelines and validation tools to make sure everything was accurate. I created automated workflows using AWS services to reduce manual work and prevent errors. I helped migrate their data from one system to another, making their reporting faster and more reliable. I built reusable React components and set up documentation tools to help the team work more efficiently. Throughout my internship, I used modern technologies like NestJS, Next.js, and TypeScript to build features that made the platform better for everyone.
   </p>
 </VerticalTimelineElement>
 
@@ -63,13 +63,9 @@ function Timeline({ parentToChild }: any) {
   contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Student Administrative Support</h3>
-  <h4 className="vertical-timeline-element-subtitle">Arlington, TX</h4>
+  <h4 className="vertical-timeline-element-subtitle">University of Texas at Arlington • Arlington, TX</h4>
   <p>
-    Managed Debian-based Linux systems (Red Hat and Ubuntu) on-site, conducting security compliance checks and hardware maintenance while authoring technical documentation, resulting in a 25% reduction in system downtime.
-    <br /><br />
-    Centralized IT asset management by enrolling devices into Active Directory and Microsoft Intune, streamlining device control, patch management, and software updates across university-owned systems.
-    <br /><br />
-    Deployed and managed endpoint security solutions such as BitLocker and device encryption, ensuring university devices remained secure against unauthorized access and data breaches.
+    I worked as Student Administrative Support at the University of Texas at Arlington where I managed Linux computer systems, making sure they were secure and running smoothly. I helped organize all the university's computers by setting them up with proper management tools, making it easier to keep them updated and secure. I also set up security features like encryption to protect university data and prevent unauthorized access.
   </p>
 </VerticalTimelineElement>
 
@@ -88,13 +84,9 @@ function Timeline({ parentToChild }: any) {
   contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Student Researcher</h3>
-  <h4 className="vertical-timeline-element-subtitle">Ithaca, NY</h4>
+  <h4 className="vertical-timeline-element-subtitle">Cornell University • Ithaca, NY</h4>
   <p>
-    Engineered computer vision solutions for assistive technology with Cornell Bowers CIS faculty, leveraging LLAVA, YOLO, and CogLVM frameworks to achieve 90% reduction in hallucinations and 80% increase in model accuracy.
-    <br /><br />
-    Refined AI model deployments in Docker, boosting performance by 90% and cutting object recognition time by 40%.
-    <br /><br />
-    Developed novel multi-modal AI system integrating visual and auditory inputs, enhancing navigation assistance for visually impaired users with 70% improvement in obstacle avoidance accuracy.
+    I worked as a Student Researcher at Cornell University where I built AI systems to help people with disabilities. I worked on computer vision technology that could better understand and describe what it sees, making it much more accurate and reliable. I improved how these AI models run by making them faster and more efficient. I also created a system that combines both visual and audio information to help visually impaired people navigate better and avoid obstacles more effectively.
   </p>
 </VerticalTimelineElement>
 
@@ -113,14 +105,10 @@ function Timeline({ parentToChild }: any) {
   contentArrowStyle={timelineArrowStyle}
 >
   <h3 className="vertical-timeline-element-title">Software Engineering Fellow</h3>
-  <h4 className="vertical-timeline-element-subtitle">Remote</h4>
+  <h4 className="vertical-timeline-element-subtitle">Headstarter • Remote</h4>
   <p>
-  Spearheaded the development of <strong>AccessWay</strong>, a travel planning platform that uses AI and text-to-speech (TTS) technologies to create inclusive and personalized itineraries for travelers with disabilities.
-  <br /><br />
-  Engineered intelligent systems that match user preferences and accessibility needs with real-time data on transit, accommodations, and points of interest.
-  <br /><br />
-  Championed user-first design principles and coordinated weekly feedback cycles, ensuring the platform effectively supports solo and group travelers with diverse mobility, sensory, and cognitive needs.
-</p>
+    I worked as a Software Engineering Fellow at Headstarter where I led the development of <strong>AccessWay</strong>, a travel planning platform that uses AI and voice technology to create personalized travel plans for people with disabilities. I built smart systems that could match people's accessibility needs with real-time information about transportation, hotels, and places to visit. I focused on making the platform user-friendly and worked closely with users to get feedback, making sure it worked well for travelers with different mobility, sensory, and cognitive needs.
+  </p>
 
 
 </VerticalTimelineElement>
