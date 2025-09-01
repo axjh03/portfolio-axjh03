@@ -8,6 +8,7 @@ interface ImageSliderProps {
 
 function ImageSlider({ images, mode }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageLoading, setImageLoading] = useState<boolean>(true);
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -87,7 +88,25 @@ function ImageSlider({ images, mode }: ImageSliderProps) {
           src={images[currentIndex] || "/placeholder.svg"}
           alt={`Project ${currentIndex + 1}`}
           style={imageStyle}
+          onError={() => {
+            setImageLoading(false);
+          }}
+          onLoad={() => {
+            setImageLoading(false);
+          }}
         />
+        {imageLoading && (
+          <div style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            color: mode === 'dark' ? '#9ca3af' : '#6b7280',
+            fontSize: '14px'
+          }}>
+            Loading...
+          </div>
+        )}
 
         {images.length > 1 && (
           <>
