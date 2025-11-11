@@ -44,7 +44,7 @@ function Timeline({ parentToChild }: any) {
   <h3 className="vertical-timeline-element-title">Full Stack SWE Intern</h3>
   <h4 className="vertical-timeline-element-subtitle">Realtor.com • Austin, TX</h4>
   <p>
-    I interned at Realtor.com where I built automated features to help property builders manage their listings more easily. I worked on modernizing their billing system using data pipelines and validation tools to make sure everything was accurate. I created automated workflows using AWS services to reduce manual work and prevent errors. I helped migrate their data from one system to another, making their reporting faster and more reliable. I built reusable React components and set up documentation tools to help the team work more efficiently. Throughout my internship, I used modern technologies like NestJS, Next.js, and TypeScript to build features that made the platform better for everyone.
+  My internship at Realtor.com was focused on driving efficiency and reliability across core property management systems. I engineered automated listing management features and significantly modernized the billing system by designing data pipelines and validation tools to ensure billing accuracy. My flagship project was building a custom MCP Server (Monitoring and Control Platform) which solved a massive team bottleneck: it automated the diagnosis and resolution of persistent "data pipeline" failures, saving developers countless hours of manual debugging. To ensure feature safety and flexibility, I also implemented a robust feature-flag system in the front end, enabling controlled rollouts and A/B testing based on user subscription tiers, all while developing using a modern stack including NestJS, Next.js, and TypeScript.
   </p>
 </VerticalTimelineElement>
 
@@ -65,7 +65,7 @@ function Timeline({ parentToChild }: any) {
   <h3 className="vertical-timeline-element-title">Student Administrative Support</h3>
   <h4 className="vertical-timeline-element-subtitle">University of Texas at Arlington • Arlington, TX</h4>
   <p>
-    I worked as Student Administrative Support at the University of Texas at Arlington where I managed Linux computer systems, making sure they were secure and running smoothly. I helped organize all the university's computers by setting them up with proper management tools, making it easier to keep them updated and secure. I also set up security features like encryption to protect university data and prevent unauthorized access.
+My role involves ensuring the security and stability of mission-critical IT infrastructure for the University of Texas at Arlington. I manage and secure Linux computer systems, ensuring smooth operation and compliance with university policies. A key contribution was streamlining IT management by organizing and centralizing the computer inventory, which significantly improved the process for applying updates and security patches campus-wide. Furthermore, I implemented robust data protection features, including disk encryption, to safeguard sensitive university data and prevent unauthorized access.
   </p>
 </VerticalTimelineElement>
 
@@ -86,7 +86,7 @@ function Timeline({ parentToChild }: any) {
   <h3 className="vertical-timeline-element-title">Student Researcher</h3>
   <h4 className="vertical-timeline-element-subtitle">Cornell University • Ithaca, NY</h4>
   <p>
-    I worked as a Student Researcher at Cornell University where I built AI systems to help people with disabilities. I worked on computer vision technology that could better understand and describe what it sees, making it much more accurate and reliable. I improved how these AI models run by making them faster and more efficient. I also created a system that combines both visual and audio information to help visually impaired people navigate better and avoid obstacles more effectively.
+  As a Student Researcher, I contributed to the development of cutting-edge assistive AI systems designed to aid people with disabilities. My work focused on the performance and accuracy of computer vision technology; I conducted rigorous benchmarking and stress-testing to identify optimization opportunities. I also created a sophisticated multi-modal system that fuses both visual and audio information. This integration provided a more comprehensive environmental understanding, enhancing navigation and obstacle avoidance capabilities for visually impaired users and demonstrating my expertise in complex machine learning pipelines.
   </p>
 </VerticalTimelineElement>
 
@@ -107,7 +107,7 @@ function Timeline({ parentToChild }: any) {
   <h3 className="vertical-timeline-element-title">Software Engineering Fellow</h3>
   <h4 className="vertical-timeline-element-subtitle">Headstarter • Remote</h4>
   <p>
-    I worked as a Software Engineering Fellow at Headstarter where I led the development of <strong>AccessWay</strong>, a travel planning platform that uses AI and voice technology to create personalized travel plans for people with disabilities. I built smart systems that could match people's accessibility needs with real-time information about transportation, hotels, and places to visit. I focused on making the platform user-friendly and worked closely with users to get feedback, making sure it worked well for travelers with different mobility, sensory, and cognitive needs.
+In this fellowship, I took the lead in developing AccessWay, a travel planning platform that leverages AI and voice technology to create personalized itineraries. The core challenge was designing smart matching algorithms that could successfully align a user's specific accessibility needs—whether mobility, sensory, or cognitive—with real-time data on transportation, hotels, and venues. I drove the product from concept to execution, focusing heavily on user-centric design principles and incorporating feedback to ensure the platform delivered genuinely functional and user-friendly solutions for travelers with diverse needs.
   </p>
 
 
