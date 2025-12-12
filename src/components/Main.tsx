@@ -30,7 +30,7 @@ function Main({ parentToChild }: any) {
           
           <button 
             className="resume-button"
-            onClick={() => window.open('https://drive.google.com/file/d/17dQRuHXyPVkD4dXMAsFBrU68HZzx72W3/view?usp=sharing', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1SuR0ghHxuC3U60pjbUYYk1eFR8fRqlL8/view?usp=sharing', '_blank')}
             style={{
               backgroundColor: isDark ? 'rgba(15, 23, 42, 0.25)' : 'rgba(255, 255, 255, 0.25)',
               backdropFilter: 'blur(10px)',
